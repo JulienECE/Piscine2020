@@ -24,6 +24,48 @@
       height: 100%;
     }
 
+    nav li {
+    	list-style-type: none;
+    }
+
+    nav a {
+    	display: inline-block;
+    	text-decoration: none;
+    }
+
+    .submenu {
+    	display: none;
+    }
+
+    nav li:hover .submenu {
+    	display: inline-block;
+    	position: absolute;
+    	top: 100%;
+    	left: 0px;
+    	padding: 0px;
+    	z-index: 1000;
+    }
+
+    .submenu li {
+    	border-bottom: 1px solid #CCC;
+    }
+
+    .submenu li a {
+    	padding: 15px 30px;
+    	font-size: 13px;
+    	color: #222538;
+    	width: 200px; 
+    }
+
+    .menu-categorie .submenu{
+    	background-color: lightgrey;
+    }
+
+    .submenu li:hover a {
+    	color: black;
+    	font-weight: bold;
+    }
+
     #searchbar{position: relative; width:500px; height:auto; padding-top: 10px;}
 
 	.formulaire               {display:inline-block;}
@@ -60,22 +102,29 @@
 
 
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-      	<li><img src="logo.png" height="50" width="70"></li>
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="categorie.html">Catégorie</a></li>
-        <li><a href="Vendre.html">Vendre</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-      	<li><div id="searchbar">
-               	<form action="" class="formulaire">
-               		<input class="champ" type="text"/>
-               		<input class="bouton" type="button" value="Rechercher" />  
-                </form>
-            </div></li>
-        <li><a href="Panier.html">Panier</a></li>
-        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
+      	<ul class="nav navbar-nav">
+	      	<li><img src="logo.png" height="50" width="70"></li>
+	        <li class="active"><a href="#">Home</a></li>
+	        <li class="menu-categorie"><a href="categorie.html">Catégorie</a>
+	        	<ul class="submenu">
+	      			<li><a href="#">Feraille ou Trésor</a></li>
+	      			<li><a href="#">Bon pour le musée</a></li>
+	      			<li><a href="#">Accessoire VIP</a></li>
+	      		</ul>
+	        </li>
+	        <li><a href="Vendre.html">Vendre</a></li>
+     	</ul>
+     	<ul class="nav navbar-nav navbar-right">
+      		<li><div id="searchbar">
+               		<form action="" class="formulaire">
+               			<input class="champ" type="text"/>
+               			<input class="bouton" type="button" value="Rechercher" />  
+               		</form>
+            	</div>
+            </li>
+	        <li><a href="Panier.html">Panier</a></li>
+	        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
     </div>
   </div>
 </nav>
@@ -88,7 +137,7 @@
       <p><a href="#">Prix croissant</a></p>
       <p><a href="#">Prix décroissant</a></p>
       <p><a href="#">Meilleures ventes</a></p>
-      <p><a href="#">Catégorie</a></p>
+      <p><a href="#"></a></p>
       <p>...</p>
     </div>
 
