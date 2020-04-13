@@ -14,8 +14,8 @@
       border-radius: 0;
     }
     
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    /* Hauteur du site */
+    .row.content {height: 500px}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -23,6 +23,11 @@
       background-color: #f1f1f1;
       height: 100%;
     }
+
+    #searchbar{position: relative; width:500px; height:auto; padding-top: 10px;}
+
+	.formulaire               {display:inline-block;}
+	.formulaire .champ       {width:400px; height:;}
     
     /* Set black background color, white text and some padding */
     footer {
@@ -52,51 +57,110 @@
         <span class="icon-bar"></span>                        
       </button>
     </div>
+
+
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
+      	<li><img src="logo.png" height="50" width="70"></li>
         <li class="active"><a href="#">Home</a></li>
         <li><a href="categorie.html">Catégorie</a></li>
-        <li><a href="Achat.html">Achat</a></li>
+        <li><a href="Vendre.html">Vendre</a></li>
         <li><a href="Panier.html">Panier</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+      	<li><div id="searchbar">
+               	<form action="" class="formulaire">
+               		<input class="champ" type="text"/>
+               		<input class="bouton" type="button" value="Rechercher" />  
+                </form>
+            </div></li>
         <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+
+
+
   
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">facebook</a></p>
-      <p><a href="#">Instagram</a></p>
-      <p><a href="#">Twitter</a></p>
+      <p>Trier par :</p>
+      <p>Prix croissant</p>
+      <p>Prix décroissant</p>
+      <p>Meilleures ventes</p>
+      <p>Catégorie</p>
+      <p>...</p>
     </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Bienvenue sur le site Ebay ECE</h1>
-      <p>Veuillez vous connecter pour avoir accès à l'espace vente ou à votre compte</p>
-      <p>Si vous souhaitez regarder et/ou acheter des produits, vous pourrez vous identifier ultérieurement</p>
-      <hr> <!-- juste pour le trait qui sépare horizontalement -->
-      <p> Vous retrouverez les objets classés par catégories dans l'onglet "Catégorie" ci-dessus </p>
-      <p>Ensuite, vous pourrez choisir votre article ainsi que votre option d'achat (enchère/maintenant/meilleure offre) dans l'onglet "Achat"</p>
-      <p>Enfin, afin de finaliser votre commande, vous retrouvez vos selections dans l'onglet panier</p><br><br>
-      <h3 align="center">Nous vous souhaitons une excellente navigation sur notre site</h3>
-    </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>PUB</p>
-      </div>
-      <div class="well">
-        <p>PUB</p>
-      </div>
-    </div>
+
+    <div class="col-sm-8"> 
+    	<div class="row">
+    		<div class="col-md-4">
+    			<div class="thumbnail">
+					<a href="#">
+ 						<img src="img1.jpg">
+ 						<p class="caption">Prix</p>
+ 					</a>
+				</div>
+			</div>
+	    		<div class="col-md-4">
+	    			<div class="thumbnail">
+						<a href="#">
+	 						<img src="img1.jpg">
+	 						<p class="caption">200€</p>
+	 					</a>
+					</div>
+				</div>
+	    		<div class="col-md-4">
+	    			<div class="thumbnail">
+						<a href="#">
+	 						<img src="img1.jpg">
+	 						<p class="caption">Prix</p>
+	 					</a>
+					</div>
+				</div>
+			</div> 
+			<div class="row">
+    		<div class="col-md-4">
+    			<div class="thumbnail">
+					<a href="#">
+ 						<img src="img1.jpg">
+ 						<p class="caption">Prix</p>
+ 					</a>
+				</div>
+			</div>
+	    		<div class="col-md-4">
+	    			<div class="thumbnail">
+						<a href="#">
+	 						<img src="img1.jpg">
+	 						<p class="caption">Prix</p>
+	 					</a>
+					</div>
+				</div>
+	    		<div class="col-md-4">
+	    			<div class="thumbnail">
+						<a href="#">
+	 						<img src="img1.jpg">
+	 						<p class="caption">Prix</p>
+	 					</a>
+					</div>
+				</div>
+			</div>     
+   		</div>
+
+
+    <div class="col-sm-2 sidenav"></div>
   </div>
 </div>
 
-<footer class="container-fluid text-center">
-  <p>Copyright Julien Maréchal 2020</p>
-</footer>
 
+
+
+
+	<footer class="container-fluid text-center">
+  		<p>Ebay ECE 2020 &copy; </p>
+	</footer>
 </body>
 </html>
