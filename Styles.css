@@ -1,6 +1,8 @@
+
+h2 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 15px; font-weight: 800; line-height: 36px; }
 .carousel-wrapper{
-  
   position:relative;
+  top:4em;
   width:100px;
   height: 300px;
   
@@ -28,14 +30,14 @@
 }
 
 .arrow-prev{
-  left:-30px;
+  left:-15px;
   position:absolute;
   top:50%;
   transform:translateY(-50%) rotate(135deg);
 }
  
 .arrow-next{
-    right:-30px;
+    right:-15px;
   position:absolute;
   top:50%;
   transform:translateY(-50%) rotate(-45deg);
@@ -62,15 +64,17 @@
     z-index: 2;
     opacity: 1;
   background:url('oeuf.jpg');
-  background-size:cover;
+  background-size: contain;
+background-repeat: no-repeat;
   }
 .item-2{
-  background:url('oeuf.jpg');
+  background:url('cap.jpg');
    background-size:cover;
 }
 .item-3{
-  background:url('oeuf.jpg');
-   background-size:cover;
+  background:url('crown.jpg');
+   background-size: contain;
+background-repeat: no-repeat;
 }
 
 *:target ~ .item-1 {
