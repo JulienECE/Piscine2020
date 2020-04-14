@@ -5,89 +5,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="Styles.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Hauteur du site */
-    .row.content {height: 550px}
-    
-    /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
-
-    nav li {
-    	list-style-type: none;
-    }
-
-    nav a {
-    	display: inline-block;
-    	text-decoration: none;
-    }
-
-    .submenu {
-    	display: none;
-    }
-
-    nav li:hover .submenu {
-    	display: inline-block;
-    	position: absolute;
-    	top: 100%;
-    	left: 0px;
-    	padding: 0px;
-    	z-index: 1000;
-    }
-
-    .submenu li {
-    	border-bottom: 1px solid #CCC;
-    }
-
-    .submenu li a {
-    	padding: 15px 30px;
-    	font-size: 13px;
-    	color: #222538;
-    	width: 200px; 
-    }
-
-    .menu-categorie .submenu{
-    	background-color: lightgrey;
-    }
-
-    .submenu li:hover a {
-    	color: black;
-    	font-weight: bold;
-    }
-
-    #searchbar{position: relative; width:500px; height:auto; padding-top: 10px;}
-
-	.formulaire               {display:inline-block;}
-	.formulaire .champ       {width:400px; height:;}
-    
-    /* Set black background color, white text and some padding */
-    footer {
-      background-color: black;
-      color: white;
-      padding: 5px;
-    }
-    
-    /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
-      .sidenav {
-        height: auto;
-        padding: 15px;
-      }
-      .row.content {height:auto;} 
-    }
-  </style>
 </head>
 <body>
 
@@ -110,7 +32,7 @@
 	        <li class="menu-categorie"><a href="categorie.html">Catégorie</a>
 	        	<ul class="submenu">
 	      			<li><a href="FerailleOuTresor.html">Feraille ou Trésor</a></li>
-	      			<li><a href="Login.html">Bon pour le musée</a></li>
+	      			<li><a href="BonMusee.html">Bon pour le musée</a></li>
 	      			<li><a href="Login.html">Accessoire VIP</a></li>
 	      		</ul>
 	        </li>
@@ -146,6 +68,8 @@
 
     <!-- Colonne du milieu-->
     <div class="col-sm-8"> 
+    	<h2 align="left">Bienvenue sur Ebay ECE !</h2>
+    	<h3 align="left">Nos meilleures ventes : </h3>
     	<div class="row">
     		<br>
     		<div class="col-md-4">
