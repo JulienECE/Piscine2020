@@ -90,7 +90,6 @@
 </head>
 <body>
 
-<!-- Style de la navBarre -->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -101,16 +100,16 @@
       </button>
     </div>
 
-	<!-- Remplissage de la navBarre-->
+
     <div class="collapse navbar-collapse" id="myNavbar">
       	<ul class="nav navbar-nav">
 	      	<li><img src="logo.png" height="50" width="70"></li>
-	        <li class="active"><a href="#">Home</a></li>
+	        <li><a href="Home.html">Home</a></li>
 	        <li class="menu-categorie"><a href="#">Catégorie</a>
 	        	<ul class="submenu">
-	      			<li><a href="FerailleOuTresor.html">Feraille ou Trésor</a></li>
-	      			<li><a href="Login.html">Bon pour le musée</a></li>
-	      			<li><a href="Login.html">Accessoire VIP</a></li>
+	      			<li><a href="#">Feraille ou Trésor</a></li>
+	      			<li><a href="#">Bon pour le musée</a></li>
+	      			<li><a href="#">Accessoire VIP</a></li>
 	      		</ul>
 	        </li>
 	        <li><a href="Vendre.html">Vendre</a></li>
@@ -130,10 +129,9 @@
   </div>
 </nav>
 
-<!--Corps du site -->
+  
 <div class="container-fluid text-center">    
   <div class="row content">
-  	<!-- Colonne de gauche-->
     <div class="col-sm-2 sidenav">
       <p>Trier par :</a> </p>
       <p><a href="#">Prix croissant</a></p>
@@ -143,52 +141,62 @@
       <p>...</p>
     </div>
 
-    <!-- Colonne du milieu-->
     <div class="col-sm-8"> 
+      <h2>Feraille ou tresor</h2>
     	<div class="row">
     		<br>
     		<div class="col-md-4">
     			<div class="thumbnail">
-					<a href="#"><img src="img1.jpg"></a>
- 					<p class="caption">300€</p>
-				</div>
-			</div>
-	    		<div class="col-md-4">
-	    			<div class="thumbnail">
+    			   <p class="caption">Prix : 300€ (Vente par négociation)</p>
+					   <a href="#"><img src="img1.jpg"></a>
+ 					   <input type="submit" name="button2" value="Négocier">
+				  </div>
+			  </div>
+	    	<div class="col-md-4">
+	    	  <div class="thumbnail">
+            <p class="caption">Prix actuel : 200€ (Vente par enchère)</p>
 						<a href="#"><img src="img1.jpg"></a>
-						<p class="caption">200€</p>
+            <input type="submit" name="button2" value="Enchérir">
 					</div>
 				</div>
 	    		<div class="col-md-4">
 	    			<div class="thumbnail">
+            <p class="caption">Prix : 200€ (Vente directe)</p>
 						<a href="#"><img src="img1.jpg"></a>
-						<p class="caption">Prix</p>
+            <input type="submit" name="button2" value="Acheter">
 					</div>
 				</div>
 			</div> 
 			<div class="row">
     		<div class="col-md-4">
     			<div class="thumbnail">
-					<a href="#"><img src="img1.jpg"></a>
-					<p class="caption">Prix</p>
+					<a href="#">
+ 						<img src="img1.jpg">
+ 						<p class="caption">Prix</p>
+ 					</a>
 				</div>
 			</div>
 	    		<div class="col-md-4">
 	    			<div class="thumbnail">
-						<a href="#"><img src="img1.jpg"></a>
-						<p class="caption">Prix</p>
+						<a href="#">
+	 						<img src="img1.jpg">
+	 						<p class="caption">Prix</p>
+	 					</a>
 					</div>
 				</div>
 	    		<div class="col-md-4">
 	    			<div class="thumbnail">
-						<a href="#"><img src="img1.jpg"></a>
-						<p class="caption">Prix</p>
+						<a href="#">
+	 						<img src="img1.jpg">
+	 						<p class="caption">Prix</p>
+
+	 					</a>
 					</div>
 				</div>
 			</div>     
    		</div>
 
-   	<!-- Colonne de Droite-->
+
     <div class="col-sm-2 sidenav"></div>
   </div>
 </div>
@@ -196,7 +204,7 @@
 
 
 
-	<!--Footer-->
+
 	<footer class="container-fluid text-center">
   		<p>Ebay ECE 2020 &copy; </p>
 	</footer>
