@@ -23,7 +23,8 @@ if ($db_found) {
 echo "jbolbpoi";
 $sql = "SELECT * FROM log";
 $result = mysqli_query($db_handle, $sql);
-while ($data = mysqli_fetch_assoc($result)) {
+while ($data = mysqli_fetch_assoc($result))
+	{
 	echo "iiug";
 echo "ID: " . $data['ID'] . "<br>";
 echo "Titre: " . $data['NOM'] . "<br>";
@@ -31,6 +32,9 @@ echo "Auteur: " . $data['TYPE'] . "<br>";
 echo "Année: " . $data['EMAIL'] . "<br>";
 
 }
+echo $email;
+$sql = "SELECT * FROM log WHERE EMAIL='$email'";
+$result = mysqli_query($db_handle, $sql);
 
 if (mysqli_num_rows($result) == 0) {
 
@@ -38,24 +42,32 @@ if (mysqli_num_rows($result) == 0) {
 
 	echo "Book not found";
 	
-
-
-$sql = "SELECT * FROM log";
+	$sql = "INSERT INTO log(ID,TYPE, NOM, EMAIL, PHOTO)
+ VALUES('3','normal', '$nom', '$email', 'bi')";
+ if (mysqli_query($db_handle, $sql)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($db_handle);
+}
+ 
+ $result = mysqli_query($db_handle, $sql);
+ 
+ $sql = "SELECT * FROM log";
 $result = mysqli_query($db_handle, $sql);
-while ($data = mysqli_fetch_assoc($result)) {
+while ($data = mysqli_fetch_assoc($result))
+	{
+	echo "iiug";
 echo "ID: " . $data['ID'] . "<br>";
 echo "Titre: " . $data['NOM'] . "<br>";
 echo "Auteur: " . $data['TYPE'] . "<br>";
 echo "Année: " . $data['EMAIL'] . "<br>";
 
 }
-	$sql = "INSERT INTO log(TYPE, NOM, EMAIL, PHOTO)
- VALUES('2','normal', '$nom', '$email', '')";
- $result = mysqli_query($db_handle, $sql);
  
  
- 
- 
+}
+else{
+	echo "non";
 }
 }
  else {
