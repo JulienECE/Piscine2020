@@ -5,7 +5,7 @@
       }
       else{
         var mdp = prompt ("Entrez votre mdp, svp");
-        if (mdp == null || mdp == ""){
+        if (mdp == null || mdp == ""){ /*Faire une boucle + bdd pour tester que le mdp est compatible*/
         alert("Mot de passe incorrect, veuillez réessayer");
         }
         else{
