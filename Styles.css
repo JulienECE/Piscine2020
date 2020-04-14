@@ -1,0 +1,173 @@
+#Log{
+  color: white;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Hauteur du site */
+    .row.content {height: 700px;}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    nav li {
+      list-style-type: none;
+    }
+
+    nav a {
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .submenu {
+      display: none;
+    }
+
+    nav li:hover .submenu {
+      display: inline-block;
+      position: absolute;
+      top: 100%;
+      left: 0px;
+      padding: 0px;
+      z-index: 1000;
+    }
+
+    .submenu li {
+      border-bottom: 1px solid #CCC;
+    }
+
+    .submenu li a {
+      padding: 15px 30px;
+      font-size: 13px;
+      color: #222538;
+      width: 200px; 
+    }
+
+    .menu-categorie .submenu{
+      background-color: lightgrey;
+    }
+
+    .submenu li:hover a {
+      color: black;
+      font-weight: bold;
+    }
+
+    #searchbar{position: relative; width:500px; height:auto; padding-top: 10px;}
+
+  .formulaire               {display:inline-block;}
+  .formulaire .champ       {width:400px; height:;}
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: black;
+      color: white;
+      padding: 5px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    } 
+    
+h2 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 15px; font-weight: 800; line-height: 36px; }
+.carousel-wrapper{
+  position:relative;
+  top:4em;
+  width:100px;
+  height: 300px;
+  
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 10px;
+  
+  margin-left: 10px;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:50px 100px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-15px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+ 
+.arrow-next{
+    right:-15px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:white;
+}
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+  background:url('oeuf.jpg');
+  background-size: contain;
+background-repeat: no-repeat;
+  }
+.item-2{
+  background:url('cap.jpg');
+   background-size:cover;
+}
+.item-3{
+  background:url('crown.jpg');
+   background-size: contain;
+background-repeat: no-repeat;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
+}
