@@ -10,6 +10,23 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    function salutation() {
+      var pseudo = prompt ("Entrez votre Pseudo, svp");
+      if (pseudo == null || pseudo == ""){
+        alert("Pseudo incorrect, veuillez réessayer");
+      }
+      else{
+        var mdp = prompt ("Entrez votre mdp, svp");
+        if (mdp == null || mdp == ""){
+        alert("Mot de passe incorrect, veuillez réessayer");
+        }
+        else{
+          location.href="file:///C:/Users/julie/Desktop/Piscine2020-master/Piscine2020/Home.html"
+        }
+      }
+    }
+  </script>
 </head>
 <body>
 
@@ -47,7 +64,7 @@
             	</div>
             </li>
 	        <li><a href="Panier.html">Panier</a></li>
-	        <li><a href="Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	        <li><span id="Log" class="glyphicon glyphicon-log-in" onclick="salutation()"></span><p id="Log"> Login</p></li>
 	    </ul>
     </div>
   </div>
