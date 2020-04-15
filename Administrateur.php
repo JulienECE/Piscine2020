@@ -1,5 +1,11 @@
 <?php require 'header.php'; ?>
-<?php require 'ColonneGauche.php'; ?>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+  	<!-- Colonne de gauche-->
+    <div class="col-sm-1 sidenav"></div>
+
+
 
 <!-- Colonne du milieu-->
     <div class="col-sm-8"> 
@@ -7,8 +13,8 @@
     	<p>Quelle action souhaitez vous effectuer ?</p><br>
     	<div class="row">
 	    	<div class="col-sm-2"><input type="image" id="image" alt="Ajouter un article" src="AjouterA.jpg" height="70" width="90"></div>
-	    	<div class="col-sm-1"></div>
-	    	<div class="col-sm-6">
+	    	<div class="col-sm-2"></div>
+	    	<div class="col-sm-8">
 	    		<form action="machin.php" method="post"> <!-- nom du php a changer -->
 	          		<table>
 		            	<tr><td align="center" width="150px">Id de l'article </td><td><input type="text" name="IdA"></td></tr>
@@ -26,8 +32,8 @@
 	    <br><br>
 	    <div class="row">
 	    	<div class="col-sm-2"><input type="image" id="image" alt="Supprimer un article" src="SupprimerA.jpg" height="70" width="90"></div>
-	    	<div class="col-sm-1"></div>
-	    	<div class="col-sm-6">
+	    	<div class="col-sm-2"></div>
+	    	<div class="col-sm-8">
 	    		<form action="machin.php" method="post"> <!-- nom du php a changer -->
 	          		<table>
 		            	<tr><td align="center" width="150px">Id de l'article </td><td><input type="text" name="IdA"></td></tr>
@@ -39,8 +45,8 @@
 		<br><br>
 		<div class="row">
 	    	<div class="col-sm-2"><input type="image" id="image" alt="Ajouter un vendeur" src="AjouterV.jpg" height="70" width="80"></div>
-	    	<div class="col-sm-1"></div>
-	    	<div class="col-sm-6">
+	    	<div class="col-sm-2"></div>
+	    	<div class="col-sm-8">
 	    		<form action="machin.php" method="post"> <!-- nom du php a changer -->
 	          		<table>
 		            	<tr><td align="center"width="150px">Id Vendeur</td><td><input type="text" name="IdV"></td></tr>
@@ -56,8 +62,8 @@
 	    <br><br>
 	    <div class="row">
 	    	<div class="col-sm-2"><input type="image" id="image" alt="Supprimer un vendeur" src="SupprimerV.jpg" height="70" width="80"></div>
-	    	<div class="col-sm-1"></div>
-	    	<div class="col-sm-6">
+	    	<div class="col-sm-2"></div>
+	    	<div class="col-sm-8">
 	    		<form action="machin.php" method="post"> <!-- nom du php a changer -->
 	          		<table>
 		            	<tr><td align="center" width="150px">Id vendeur</td><td><input type="text" name="IdV" width="150px"></td></tr>
