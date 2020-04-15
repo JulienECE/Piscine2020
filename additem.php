@@ -35,10 +35,10 @@ while ($data = mysqli_fetch_assoc($result))
 	}
 }
 if ($test==false) {
-	//echo $_SESSION['username'];
+	$name=$_SESSION['username'];
 	
 	$sql = "INSERT INTO item(TITRE, DESCRIPTION, PHOTO, VIDEO, PRIX, NOM_VENDEUR, NOM_ACHETEUR, ETAT,CATEGORIE,SCATEGORIE,TYPE_VENTE,TEMPS)
-	VALUES('$titre', '$description', '', '','$prix','','','0','','','','')";
+	VALUES('$titre', '$description', '', '','$prix','$name','','0','','','','')";
 	$result = mysqli_query($db_handle, $sql);
 	$sql = "SELECT * FROM item";
 	$result = mysqli_query($db_handle, $sql);
@@ -46,8 +46,8 @@ if ($test==false) {
 		{
 			echo "ID: " . $data['ID'] . "<br>";
 			echo "Titre: " . $data['TITRE'] . "<br>";
-			echo "Auteur: " . $data['DESCRIPTION'] . "<br>";
-			echo "Année: " . $data['PHOTO'] . "<br>";
+			echo "Description: " . $data['DESCRIPTION'] . "<br>";
+			echo "Photo: " . $data['PHOTO'] . "<br>";
 			echo "ID: " . $data['VIDEO'] . "<br>";
 			echo "Titre: " . $data['PRIX'] . "<br>";
 			echo "Auteur: " . $data['NOM_VENDEUR'] . "<br>";
@@ -65,3 +65,5 @@ echo "Database not found";
 
 //fermer la connexion
 mysqli_close($db_handle);
+header('Location: ./index.php');
+  exit();
