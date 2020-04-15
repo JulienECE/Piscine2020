@@ -14,7 +14,7 @@
        <p><input class="inputbasic" type="file"></p>
        <p align="left"><input type="text" name="prix" placeholder="Prix"/></p>
        <p align="left"><input type="text" name="pseudo" placeholder="Votre pseudo"/></p>
-       <p align="left"><input type="submit" name="pseudo" value="Valider" ></p>
+       <p align="left"><input type="submit" name="boutonValider" value="Valider" ></p>
     </form>
 </div>
 
