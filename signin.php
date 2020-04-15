@@ -1,5 +1,4 @@
 
-
 <?php require 'header.php'; ?>
 
 <div class="container-fluid text-center">    
@@ -28,12 +27,6 @@
 				</tr>
 				<tr>
 					<input type="text" placeholder="Email" class="inputbasic" name="email"/>
-				</tr>
-				<tr>
-					<p>Choisir une photo de profil<p/>
-				</tr>
-				<tr>
-					<input type="file" class="" placeholder="a"/>
 				</tr>
 				<br>
 					<input type="submit" name="button" value="valider"/>
