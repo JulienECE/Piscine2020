@@ -3,23 +3,8 @@
 	init_php_session();
 	
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>ECE Ebay</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<?php require 'header.php'; ?>
 
-  <link rel="stylesheet" href="Styles.css">
-  <link rel="stylesheet" href="slider.css">
-  <script src="slider.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="fonctions.js"></script>
-</head>
-<body>
 
 <!-- Style de la navBarre -->
 <nav class="navbar navbar-inverse">

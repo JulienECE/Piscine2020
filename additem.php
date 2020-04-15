@@ -1,12 +1,11 @@
 <?php
-if(isset($_POST['envoi'])){ // si formulaire soumis
-echo $_POST['message'];
-}
+	require 'util.php';
+	init_php_session();
 ?>
 <?php
 
 //recuperer les données venant de la page HTML
-
+echo $_SESSION['username'];
 $titre = isset($_POST["titre"])? $_POST["titre"] : "";
 $description = isset($_POST["description"])? $_POST["description"] : "";
 $prix = isset($_POST["prix"])? $_POST["prix"] : "";
