@@ -43,6 +43,7 @@
 </style>
 </head>
 <body>
+
 	<form action="additem.php" method="post" class="formulaire_val">
 	   <p><input class="inputbasic" type="text" name="titre" placeholder="Titre de l'objet"/></p>
 	   <p><textarea class="inputbasic" name="description"></textarea></p>
@@ -52,5 +53,11 @@
 	   <p><input type="text" name="pseudo" /></p>
 	   <p><input type="submit" name="valider" /></p>
 	</form>
+	<form action="additem.php" method="post">
+ message : <br>
+ <textarea name="message"></textarea>
+ <br>
+ <input type="submit" name="envoi">
+</form>
 </body>
 </html>
