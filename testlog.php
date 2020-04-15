@@ -19,6 +19,7 @@ if ($erreur == "") {
 	} else {
 		echo "Erreur : $erreur";
 	}
+	
 //identifier votre BDD
 
 $database = "bdd";
