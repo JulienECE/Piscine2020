@@ -4,6 +4,7 @@
   <title>ECE Ebay</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -39,11 +40,17 @@
       }
       .row.content {height:auto;} 
     }
-  </style>
+</style>
 </head>
 <body>
-<form method="post" action="traitement.php">
+<form action="additem.php" method="post" class="formulaire_val">
+   <p><input class="inputbasic" type="text" name="titre" placeholder="Titre de l'objet"/></p>
+   <p><textarea class="inputbasic"></textarea></p>
+   <p><input class="inputbasic" type="file"></p>
+   <p><input class="inputbasic" type="file"></p>
+   <p><input type="text" name="prix" name="prix"/></p>
    <p><input type="text" name="pseudo" /></p>
+   <p><input type="submit" name="pseudo" /></p>
 </form>
 
 </body>
