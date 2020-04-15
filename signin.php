@@ -1,3 +1,8 @@
+<?php
+	require 'util.php';
+	init_php_session();
+	
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,27 +82,35 @@
     	<h3 align="left">Bienvenue sur Ebay ECE !</h3>
     	<h5 align="left">Nos meilleures ventes : </h5>
     	<div class="row">
-    		<br>
-			<center>
-		<form action="testlog.php" method="post" class="formulaire_val">
-		<table>
-		<br>
-		<tr>
-			<input type="text" placeholder="Nom" class="inputbasic firstinput" name="nom"/>
-			</tr>
-			<tr>
-			<input type="text" placeholder="Email" class="inputbasic" name="email"/>
-			</tr>
-			<tr>
-			<p>Choisir une photo de profil<p/>
-			</tr>
-			<tr>
-			<input type="file" class="" placeholder="a"/>
-			</tr>
+		<?php if(is_logged()):?>
+		
+			<p> Bienvenue <?=htmlspecialchars($_SESSION['username']) ?> |<a href='testlog.php?action=logout'>Se deconnecter</a></p>
+
+		<?php else:?>
 			<br>
-			<input type="submit" name="button" value="valider"/>
-		</table>
-		</form>
+			<center>
+			
+			<form action="testlog.php" method="post" class="formulaire_val">
+				<table>
+				<br>
+				<tr>
+					<input type="text" placeholder="Nom" class="inputbasic firstinput" name="nom"/>
+				</tr>
+				<tr>
+					<input type="text" placeholder="Email" class="inputbasic" name="email"/>
+				</tr>
+				<tr>
+					<p>Choisir une photo de profil<p/>
+				</tr>
+				<tr>
+					<input type="file" class="" placeholder="a"/>
+				</tr>
+				<br>
+					<input type="submit" name="button" value="valider"/>
+				</table>
+			</form>
+		<?php endif;?>
+    		
 		<center/>
    		</div>
       

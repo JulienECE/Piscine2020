@@ -24,8 +24,8 @@ if (mysqli_num_rows($result) == 0) {
 
 	//le livre recherché n'existe pas
 	
-	$sql = "INSERT INTO log(TYPE, NOM, EMAIL, PHOTO)
- VALUES('normal', '$nom', '$email', '')";
+	$sql = "INSERT INTO log(ADMIN, NOM, EMAIL, PHOTO)
+ VALUES('0', '$nom', '$email', '')";
 
  //Verif erreur
  
@@ -46,7 +46,7 @@ while ($data = mysqli_fetch_assoc($result))
 		
 echo "ID: " . $data['ID'] . "<br>";
 echo "Titre: " . $data['NOM'] . "<br>";
-echo "Auteur: " . $data['TYPE'] . "<br>";
+echo "Auteur: " . $data['ADMIN'] . "<br>";
 echo "Année: " . $data['EMAIL'] . "<br>";
 
 }
