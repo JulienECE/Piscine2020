@@ -49,9 +49,10 @@
                		</form>
             	</div>
             </li>
-            <li><li><span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span></li>
+            <li><span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span></li>
 	          <li><a href="#">Panier</a></li>
-	        <li><span id="Log" class="glyphicon glyphicon-log-in" onclick="salutation()"></span><p id="Log" onclick="salutation()"> Login</p></li>
+	          <li><span id="Log" class="glyphicon glyphicon-log-in" onclick="salutation()"></span><p id="Log" onclick="salutation()"> Login</p></li>
+            <li><a href="Register.php">Register</a></li>
 	    </ul>
     </div>
   </div>
