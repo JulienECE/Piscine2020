@@ -1,8 +1,3 @@
-<?php
-	require 'util.php';
-	init_php_session();
-	
-?>
 
 <?php require 'header.php'; ?>
 
