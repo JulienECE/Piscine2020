@@ -51,7 +51,7 @@
             </li>
             <li><span class="glyphicon glyphicon-shopping-cart" style="color: white;"></span></li>
 	          <li><a href="Panier.php">Panier</a></li>
-	          <li><a href="signin.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	          <li><span id="Log" class="glyphicon glyphicon-log-in" onclick="salutation()"></span><p id="Log" onclick="salutation()"> Login</p></li>
             <li><a href="Register.php">Register</a></li>
 	    </ul>
     </div>
