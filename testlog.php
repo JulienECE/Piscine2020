@@ -1,5 +1,13 @@
 <?php
 	require 'util.php';
+	init_php_session();
+	
+	if(isset($_GET['action']) && !empty($_GET['action'] && $_GET['action'] == "logout"))
+	{
+		clean_php_session();
+		header('location: signin.php');
+	}
+	
 //recuperer les données venant de la page HTML
 
 $email = isset($_POST["email"])? $_POST["email"] : "";
@@ -46,12 +54,16 @@ else{
 		if($email==$mdp)
 		{
 			echo "connected";
-			init_php_session();
+			$_SESSION['username'] = $nom;
+			$_SESSION['rank'] = $data['ADMIN'];
 		}
 	}
 }
 }
 
 }
+echo $_SESSION['username'];
 //fermer la connexion
 mysqli_close($db_handle);
+header('Location: ./signin.php');
+  exit();
