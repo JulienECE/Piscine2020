@@ -39,7 +39,7 @@
 	      			<li><a href="Login.html">Accessoire VIP</a></li>
 	      		</ul>
 	        </li>
-	        <li><a href="#">Vendre</a></li>
+	        <li><a href="Vendre.php">Vendre</a></li>
      	</ul>
      	<ul class="nav navbar-nav navbar-right">
       		<li><div id="searchbar">
