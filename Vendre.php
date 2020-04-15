@@ -1,5 +1,9 @@
 <?php require 'header.php'; ?>
-<?php require 'ColonneGauche.php'; ?>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <!-- Colonne de gauche-->
+    <div class="col-sm-1 sidenav"></div>
 
 <div class="col-sm-8"> 
   <h3>Formulaire d'ajout des items à vendre</h3>

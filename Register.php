@@ -1,5 +1,9 @@
 <?php require 'header.php'; ?>
-<?php require 'ColonneGauche.php'; ?>
+
+<div class="container-fluid text-center">    
+  <div class="row content">
+  	<!-- Colonne de gauche-->
+    <div class="col-sm-1 sidenav"></div>
     <!-- Colonne du milieu-->
 
     <div class="col-sm-8"> 
