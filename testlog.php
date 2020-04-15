@@ -5,6 +5,20 @@
 $email = isset($_POST["email"])? $_POST["email"] : "";
 $nom = isset($_POST["nom"])? $_POST["nom"] : "";
 
+$erreur = "";
+
+if ($nom == ""){
+		$erreur .= "Nom de l'employé est vide.<br>";
+	}
+if ($email == ""){
+		$erreur .= "Email de l'employé est vide.<br>";
+	}
+
+if ($erreur == "") {
+		echo "Formulaire valide.<br>";
+	} else {
+		echo "Erreur : $erreur";
+	}
 //identifier votre BDD
 
 $database = "bdd";
