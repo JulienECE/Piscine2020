@@ -4,6 +4,7 @@
 ?>
 <?php
 
+ if(is_logged()){
 //recuperer les données venant de la page HTML
 echo $_SESSION['username'];
 $titre = isset($_POST["titre"])? $_POST["titre"] : "";
@@ -66,4 +67,11 @@ echo "Database not found";
 //fermer la connexion
 mysqli_close($db_handle);
 header('Location: ./index.php');
+
+
   exit();
+ }
+ else{
+	 header('Location: ./signin.php');
+  exit();
+ }
