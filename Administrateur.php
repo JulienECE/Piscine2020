@@ -1,14 +1,7 @@
 <?php require 'header.php'; ?>
 
-<div class="container-fluid text-center">    
-  <div class="row content">
-  	<!-- Colonne de gauche-->
-    <div class="col-sm-1 sidenav"></div>
-
-
-
 <!-- Colonne du milieu-->
-    <div class="col-sm-8"> 
+<div class="container-fluid p-0">
     	<h4 align="left">Administrateur</h4>
     	<p>Quelle action souhaitez vous effectuer ?</p><br>
     	<div class="row">
@@ -75,5 +68,5 @@
 	    </div>
     </div>
 
-<?php require 'ColonneDroite.php'; ?>
+
 <?php require 'footer.php'; ?>
