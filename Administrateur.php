@@ -5,7 +5,7 @@
     	<h4 align="left">Administrateur</h4>
     	<p>Quelle action souhaitez vous effectuer ?</p><br>
     	<div class="row">
-	    	<div class="col-sm-2"><input type="image" id="image" alt="Ajouter un article" src="AjouterA.jpg" height="70" width="90"></div>
+	    	<div class="col-sm-2"><input type="image" id="image" alt="Ajouter un article" src="AjouterA.jpg" height="140" width="10"></div>
 	    	<div class="col-sm-2"></div>
 	    	<div class="col-sm-8">
 	    		<form action="machin.php" method="post"> <!-- nom du php a changer -->
@@ -24,7 +24,7 @@
 	    </div>
 	    <br><br>
 	    <div class="row">
-	    	<div class="col-sm-2"><input type="image" id="image" alt="Supprimer un article" src="SupprimerA.jpg" height="70" width="90"></div>
+	    	<div class="col-sm-2"><input type="image" id="image" alt="Supprimer un article" src="SupprimerA.jpg" height="140" width="90"></div>
 	    	<div class="col-sm-2"></div>
 	    	<div class="col-sm-8">
 	    		<form action="machin.php" method="post"> <!-- nom du php a changer -->
@@ -37,7 +37,7 @@
 		</div>
 		<br><br>
 		<div class="row">
-	    	<div class="col-sm-2"><input type="image" id="image" alt="Ajouter un vendeur" src="AjouterV.jpg" height="70" width="80"></div>
+	    	<div class="col-sm-2"><input type="image" id="image" alt="Ajouter un vendeur" src="AjouterV.jpg" height="140" width="80"></div>
 	    	<div class="col-sm-2"></div>
 	    	<div class="col-sm-8">
 	    		<form action="machin.php" method="post"> <!-- nom du php a changer -->
@@ -54,7 +54,7 @@
 	    </div>
 	    <br><br>
 	    <div class="row">
-	    	<div class="col-sm-2"><input type="image" id="image" alt="Supprimer un vendeur" src="SupprimerV.jpg" height="70" width="80"></div>
+	    	<div class="col-sm-2"><input type="image" id="image" alt="Supprimer un vendeur" src="SupprimerV.jpg" height="140" width="80"></div>
 	    	<div class="col-sm-2"></div>
 	    	<div class="col-sm-8">
 	    		<form action="machin.php" method="post"> <!-- nom du php a changer -->

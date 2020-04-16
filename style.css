@@ -238,3 +238,58 @@ font-size: 0.9em;
   border:1px solid grey;
   border-radius:10px;
 }
+
+
+/*Formulaire paiement*/
+#pformulairePaiement {
+  margin-top: 0px;
+}
+ 
+#fieldsetPaiement {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+ 
+#legendPaiement{
+    background-color: #6d45cc;
+    color: white;
+    padding: 1px 3px;
+}
+ 
+#labelPaiement {
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+ 
+#emPaiement {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+
+input:focus {
+  background: #eaeaea;
+}
+ 
+input, textarea {
+  width: 250px;
+}
+ 
+textarea {
+  height: 100px;
+}
+ 
+select {
+  width: 300px;
+}
+ 
+input[type=checkbox] {
+  width: 10px;
+}
+ 
+input[type=submit] {
+  width: 300px;
+  padding: 10px;
+}
