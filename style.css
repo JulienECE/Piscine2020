@@ -240,8 +240,32 @@ font-size: 0.9em;
 }
 
 .greenColor{
-	background-image: url("./noir.png");
+    background-color: #33CC33;
+	color:white;
 }
 .redColor{
     background-color: #E60000;
+	color:white;
 }
+.yellowColor{
+	background-color: #FFED00;	
+	color:white;
+}
+.blackColor{
+	background-color: #000000;	
+	color:white;
+}
+.whiteColor{
+	background-color: #FFFFFF;	
+	color:black;
+}
+select{
+	width:100px;
+display:block;
+Text-shadow: none;
+}
+select{
+
+Text-shadow: none;
+}
+
