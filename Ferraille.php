@@ -5,31 +5,42 @@
 
 <!-- Colonne du milieu-->
 
-<div class="container-fluid text-center">    
+<div class="container-fluid">    
   <div class="row content">  
     <div class="col-sm-12"> 
-    	<h4 >Ferraille ou trésor</h4>
+    	<h4>Ferraille ou trésor</h4>
     		<br>
-    			<div class="thumbnail">
-					<p class="caption">Prix : 300€ (Vente par négociation)</p>
-					<a href="#"><img src="img1.jpg"></a>
- 					<input type="submit" name="buttonNégo" value="Négocier">
-				</div>	    		
-	    			<div class="thumbnail">
-						<p class="caption">Prix actuel : 200€ (Vente par enchère)</p>
-						<a href="#"><img src="img1.jpg"></a>
-            			<input type="submit" name="buttonEnchere" value="Enchérir">
-					</div>
-	    			<div class="thumbnail">
-						<p class="caption">Prix : 200€ (Vente directe)</p>
-						<a href="#"><img src="img1.jpg"></a>
-            			<input type="submit" name="buttonAcheter" value="Acheter">
-					</div>
-	    			<div class="thumbnail">
-						<p class="caption">Prix : 200€ (Vente directe)</p>
-						<a href="#"><img src="img1.jpg"></a>
-            			<input type="submit" name="buttonAcheter" value="Acheter">
-					</div>
+    		<table>
+	    		<tr>
+	    			<td><a href="img1"><img src="img1.jpg"></a></td>
+	    			<td width="300px"><p align="center">Prix : 300€ <br>(Vente par négociation)</p></td>
+	    			<td><input type="submit" name="buttonNégo" value="Négocier"></td>
+	    		</tr>
+	    		<tr><td><hr></td><td><hr></td><td><hr></td></tr>
+	    		<tr>
+	    			<td><a href="img1"><img src="img1.jpg"></a></td>
+	    			<td width="300px"><p align="center">Prix : 200€ <br>(Vente par enchère)</p></td>
+	    			<td><input type="submit" name="buttonEnchere" value="Enchérir"></td>
+	    		</tr>
+	    		<tr><td><hr></td><td><hr></td><td><hr></td></tr>
+	    		<tr>
+	    			<td><a href="img1"><img src="img1.jpg"></a></td>
+	    			<td width="300px"><p align="center">Prix : 200€ <br>(Vente directe)</p></td>
+	    			<td><input type="submit" name="buttonAcheter" value="Acheter"></td>
+	    		</tr>
+	    		<tr><td><hr></td><td><hr></td><td><hr></td></tr>
+	    		<tr>
+	    			<td><a href="img1"><img src="img1.jpg"></a></td>
+	    			<td width="300px"><p align="center">Prix : 200€ <br>(Vente directe)</p></td>
+	    			<td><input type="submit" name="buttonAcheter" value="Acheter"></td>
+	    		</tr>
+	    		<tr><td><hr></td><td><hr></td><td><hr></td></tr>
+	    		<tr>
+	    			<td><a href="img1"><img src="img1.jpg"></a></td>
+	    			<td width="300px"><p align="center">Prix : 200€ <br>(Vente directe)</p></td>
+	    			<td><input type="submit" name="buttonAcheter" value="Acheter"></td>
+	    		</tr>
+			</table>
 		</div>
 		</div>
 		</div>
