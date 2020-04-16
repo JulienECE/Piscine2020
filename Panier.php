@@ -2,7 +2,7 @@
 <!-- Colonne du milieu-->
 <div class="container-fluid p-0">
     	<h3>Votre Panier<br><br></h3>
-    	<div class="row bg-warning">
+    	<div id="panier" class="row">
 					<tr>
 						<div class="col-sm-1"><td>ID</td></div>
 						<div class="col-sm-3"><td>Nom de l'article</td></div>
@@ -36,7 +36,7 @@
 
 		</div>
 		<br>
-		<div class="row bg-warning">
+		<div id="panier" class="row">
 			
 				<tr>
 					<div class="col-sm-6"><td>Nombre total d'articles</td></div>
@@ -49,6 +49,7 @@
 				</tr>
 		
 		</div>
+		<br>
 
 		
     </div>
