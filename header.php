@@ -41,8 +41,8 @@
         </div>
         <div class="col-md-4 col-12 text-right">
           <p class="my-md-4 header-links">
-            <a href="Register.php" class="px-2">Se connecter</a>
-            <a href="signin.php" class="px-1">Nouveau compte</a>
+            <a href="signin.php" class="px-2">Se connecter</a>
+            <a href="Register.php" class="px-1">Nouveau compte</a>
             
           </p>
           
