@@ -26,31 +26,13 @@
 			<option style="background:url('noir.png') no-repeat; width:100px; height:100px;"></option>
 			<option style="background:url('blanc.png') no-repeat; width:100px; height:100px;"></option>
 		</select>
+		<select id="reviewAction">
+			<option class="greenColor">Accept and Advance Status</option>
+			<option class="redColor">Return for Modifications</option>
+		</select>
 	   <p><input type="submit" name="valider" /></p>
 	</form>
 	
-	<script>
-		function change() {
-		 
-			select = document.getElementById("select");
-			select_s = select.style;
-			 
-			switch(select.selectedIndex) {
-			 
-			case 0 :
-			select_s.background = "url('noir.png') no-repeat";
-			break;
-			 
-			case 1 :
-			select_s.background = "url('blanc.png') no-repeat";
-			break;
-			 
-			default:
-			select_s.background = "none";
-			break;
-			}
-		}
-	</script>
 	
 <?php require 'footer.php'; ?>
 
