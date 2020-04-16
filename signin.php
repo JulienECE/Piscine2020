@@ -3,13 +3,13 @@
 <div class="container-fluid text-center">    
   <div class="row content">
   	<!-- Colonne de gauche-->
-    <div class="col-sm-1 sidenav"></div>
+    
 
     <!-- Colonne du milieu-->
-    <div class="col-sm-8"> 
-    	<h3 align="left">Bienvenue sur Ebay ECE !</h3>
-    	<h5 align="left">Nos meilleures ventes : </h5>
-    	<div class="row">
+    <div class="col-sm-12"> 
+    	<br>
+    	<h3>Bienvenue sur Ebay ECE !</h3>
+    
 		<?php if(is_logged()):?>
 		
 			<p> Bienvenue <?=htmlspecialchars($_SESSION['username']) ?> |<a href='testlog.php?action=logout'>Se deconnecter</a></p>
@@ -20,25 +20,29 @@
 			
 			<form action="testlog.php" method="post" class="formulaire_val">
 				<table>
+					
+    	    		
 				<br>
 				<tr>
 					<input type="text" placeholder="Nom" class="inputbasic firstinput" name="nom"/>
 				</tr>
+				<br>
+
 				<tr>
 					<input type="text" placeholder="Email" class="inputbasic" name="email"/>
 				</tr>
 				<br>
-					<input type="submit" name="button" value="valider"/>
+					<input type="submit" name="button" value="Se connecter"/>
 				</table>
 			</form>
 		<?php endif;?>
     		
 		<center/>
-   		</div>
+   		
       
 	</div>
       
-	<div class="col-sm-3 sidenav"></div>
+	
 </div>
 </div>
 

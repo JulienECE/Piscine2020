@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Paaji+2|Cinzel|Lobster|Orbitron|Pacifico|Righteous&display=swap');
+:root{
+	--light-gray:#2b3032a1;
+	--primary-color:#6d45cc;
+	--border:#4565cc;
+	--text-color:#000000;
+	
+
+}
+
+
+
+
+.primary-color{
+	color: var(--primary-color);
+}
+
+.bg-primary-color{
+	background-color: var(--primary-color)!important;
+}
+.text-color{
+	color:var(--text-color);
+}
+
+
+
+.lightblue{
+	color: lightblue;
+}
+
+header{
+	background-color: var(--primary-color);
+	font-family: 'Righteous', cursive;
+	
+}
+
+.site-title{
+	font-family: 'Orbitron', sans-serif;
+}
+
+.header-links a{
+	font-size: 0.9em;
+	font-family: 'Baloo Paaji 2', cursive;
+	text-decoration:none;
+	color: #2b3032a1;
+}
+.navbar-nav{
+	padding:0.8em 0em;
+}
+
+.navbar-nav.nav-link{
+	font-size: 0.9em;
+	color:var(--light-gray)!important;
+}
+
+.navbar-nav.nav-item .navlink{
+	padding: 0 1.3em;
+}
+
+.container-fluid{
+	width: 90%;
+}
+.slick-arrow:before { 
+	color: lightblue !important; 
+	position: absolute;
+}
+.slick-prev {
+    margin-left: -25px;
+  }
+
+  .slick-next {
+    margin-right: 0px;
+  }
+   .product{
+  	height: 25rem;
+  	position: relative;
+  	text-align: center;
+
+  	
+  }
+  .site-slider-two .product img{
+  	
+  	margin-left: -5.5rem;
+  	margin-bottom: -4.5rem;
+  }
+
+  .site-btn.btn-span{
+  	position: center;
+
+  	padding: 0.8rem 1.9rem;
+  	border-radius: 4rem;
+  	border: 1px solid var(--border);
+  	background-color: white;
+  	color: var(--light-gray);
+
+  }
+  .product:hover span{
+  	background-color: lightgray;
+  }
+  .product a{
+  	text-decoration:none;
+  }
+ #site-footer {
+
+background-color: var(--primary-color);
+position: relative;
+}
+
+
+#footer1{
+
+font-family: 'Baloo Paaji 2', cursive;
+font-size: 0.9em;
+}
+#footer2{
+font-family: 'Baloo Paaji 2', cursive;
+font-size: 0.9em;
+}
