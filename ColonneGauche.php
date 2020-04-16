@@ -1,7 +1,7 @@
 <div class="container-fluid text-center">    
   <div class="row content">
   	<!-- Colonne de gauche-->
-    <div class="col-sm-1 sidenav">
+    <div class="col-sm-3 sidenav">
       <p>Trier par :</a> </p>
       <p><a href="#">Prix croissant</a></p>
       <p><a href="#">Prix décroissant</a></p>

@@ -1,9 +1,14 @@
 <?php require 'header.php'; ?>
-<?php require 'ColonneGauche.php'; ?>
+
+
+
 
 <!-- Colonne du milieu-->
-    <div class="col-sm-8"> 
-    	<h4 align="left">Ferraille ou trésor</h4>
+
+<div class="container-fluid text-center">    
+  <div class="row content">  
+    <div class="col-sm-12"> 
+    	<h4 >Ferraille ou trésor</h4>
     	<div class="row">
     		<br>
     		<div class="col-md-4">
@@ -29,6 +34,8 @@
 				</div>
 			</div>
 		</div>
+		</div>
+		</div>
 
-<?php require 'ColonneDroite.php'; ?>
+
 <?php require 'footer.php'; ?>
