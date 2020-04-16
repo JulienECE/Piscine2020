@@ -27,4 +27,3 @@ function is_admin():bool
 			return true;
 	return false;
 }
-	
