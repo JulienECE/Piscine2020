@@ -31,9 +31,9 @@
 				<tr>
 					<input type="text" placeholder="Email" class="inputbasic" name="email"/>
 				</tr>
-				<br>
-					<input type="submit" name="button" value="Se connecter"/>
+				<tr><td><br><input type="submit" name="button" value="Se connecter"/></td></tr>
 				</table>
+				<br><br><br>
 			</form>
 		<?php endif;?>
     		
