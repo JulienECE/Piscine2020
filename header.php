@@ -40,8 +40,8 @@
 	        <li class="menu-categorie"><a href="#">Catégorie</a>
 	        	<ul class="submenu">
 	      			<li><a href="Ferraille.php">Feraille ou Trésor</a></li>
-	      			<li><a href="BonMusee.html">Bon pour le musée</a></li>
-	      			<li><a href="Login.html">Accessoire VIP</a></li>
+	      			<li><a href="#">Bon pour le musée</a></li>
+	      			<li><a href="#">Accessoire VIP</a></li>
 	      		</ul>
 	        </li>
 	        <li><a href="Vendre.php">Vendre</a></li>
