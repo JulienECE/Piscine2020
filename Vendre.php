@@ -17,5 +17,5 @@
 		</form>
 	</div>
 
-	<?php require 'ColonneDroite.php'; ?>
+	<?php require 'ColonneDroite.php';?>
 	<?php require 'footer.php'; ?>
