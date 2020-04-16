@@ -4,7 +4,16 @@
 ?>
 <?php
 
+
+//Insertion du nouvel article dans la base de données
+if(isset($_POST) && empty($_POST['titre']) || empty($_POST['description']) || empty($_POST['prix'])){
+    echo"Veuillez remplir tous les champs";
+	$_SESSION['complete']=false;
+	header('Location: ./Vendre.php');
+	exit();
+}
  if(is_logged()){
+	$_SESSION['complete']=true;
 //recuperer les données venant de la page HTML
 echo $_SESSION['username'];
 $titre = isset($_POST["titre"])? $_POST["titre"] : "";
@@ -63,15 +72,16 @@ if ($test==false) {
  else {
 echo "Database not found";
 }
-
+ 
 //fermer la connexion
 mysqli_close($db_handle);
 header('Location: ./index.php');
 
 
-  exit();
- }
+ exit();
+}
  else{
-	 header('Location: ./signin.php');
+	  echo"non";
+	header('Location: ./signin.php');
   exit();
  }

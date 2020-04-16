@@ -56,6 +56,7 @@ else{
 			echo "connected";
 			$_SESSION['username'] = $nom;
 			$_SESSION['rank'] = $data['ADMIN'];
+			$_SESSION['complete'] = true;
 		}
 	}
 }
