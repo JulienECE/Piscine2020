@@ -49,6 +49,8 @@
 				</tr>
 		
 		</div>
+		<br>
+		<tr><td><input type="submit" name="button" value="Passer la commande" align="right"></td></tr>
 		<br><br><br><br><br>
 
 		
