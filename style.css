@@ -56,6 +56,13 @@ header{
 	text-decoration:none;
 	color: white;
 }
+.basket li,i{
+
+  color:  var(--primary-color);
+}
+.basket:hover li{
+    background-color: lightgray;
+  }
 .text-center a{
   text-decoration:none;
   color: white;

@@ -92,7 +92,7 @@
       <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Rechercher</button>
     </form>
 
-    <div class="navbar-nav">
+    <div class="basket">
       <a class="panier" href="Panier.php">
       <li class="nav-item border rounded-circle mx-2 basket-icon">
         <i class="fas fa-shopping-basket p-2"></i>
