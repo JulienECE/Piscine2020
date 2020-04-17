@@ -6,51 +6,48 @@
 
 	<form action="additem.php" method="post" class="formulaire_val">
 	   <p><input class="inputbasic" type="text" name="titre" placeholder="Titre de l'objet"/></p>
-	   <p><textarea class="inputbasic" name="description"></textarea></p>
+	   <p><textarea class="inputbasic" name="description" placeholder="Description"></textarea></p>
 	   <p><input class="inputbasic" type="file"></p>
 	   <p><input class="inputbasic" type="file"></p>
-	   <p><input type="text" name="prix"/></p>
-	   <input type="select">
-		   <nom>Couleur</nom>
-		   <libellé>Quelle est votre langue marternelle ?</libellé>
-		   <option valeur="fr">Français</option>
-		   <option valeur="nl">Néerlandais</option>
-		   <option valeur="en">Anglais</option>
-		   <option valeur="other">Autre</option>
-		</input>
-		<select name="selectBox1">
-			<option value="noir.png" style="background-image:url(noir.png);">male</option>
-			<option value="blanc.png" style="background-image:url(blanc.png);">female</option>
-		</select> 
-		<select id="select" onchange="change();">
-			<option style="background:url('noir.png') no-repeat; width:100px; height:100px;"></option>
-			<option style="background:url('blanc.png') no-repeat; width:100px; height:100px;"></option>
+	   <p><input type="text" name="prix" placeholder="Prix"/></p>
+	   Sexe:
+		<select id="reviewAction" name="sexe">
+			<option value="Default">Default</option>
+			<option value="Homme">Homme</option>
+			<option value="Femme">Femme</option>
+			<option value="Unisexe">Unisexe</option>
 		</select>
+		<br>
+		Catégorie:
+		<select id="reviewAction" name="categorie">
+			<option value="Default">Default</option>
+			<option value="Chapeau">Chapeau</option>
+			<option value="Haut">Haut</option>
+			<option value="Bas">Bas</option>
+			<option value="Accessoire">Accessoire</option>
+		</select>
+		<br>
+		Couleur:
+		<select id="reviewAction" name="couleur">
+			<option value="Default">Default</option>
+			<option class="greenColor" value="vert">vert</option>
+			<option class="redColor" value="rouge">rouge</option>
+			<option class="yellowColor" value="jaune">jaune</option>
+			<option class="blackColor" value="noir">noir</option>
+			<option class="whiteColor" value="blanc">blanc</option>
+		</select>
+		<br>
+		Etat:
+		<select id="reviewAction" name="etat">
+			<option value="Default">Default</option>
+			<option value="Neuf">Neuf</option>
+			<option value="Bon état">Bon état</option>
+			<option value="Usé">Usé</option>
+		</select>
+		<br>
 	   <p><input type="submit" name="valider" /></p>
 	</form>
 	
-	<script>
-		function change() {
-		 
-			select = document.getElementById("select");
-			select_s = select.style;
-			 
-			switch(select.selectedIndex) {
-			 
-			case 0 :
-			select_s.background = "url('noir.png') no-repeat";
-			break;
-			 
-			case 1 :
-			select_s.background = "url('blanc.png') no-repeat";
-			break;
-			 
-			default:
-			select_s.background = "none";
-			break;
-			}
-		}
-	</script>
 	
 <?php require 'footer.php'; ?>
 
