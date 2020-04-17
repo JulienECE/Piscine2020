@@ -69,9 +69,9 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="Ferraille.php">Ferraille ou Trésor</a>
-            <a class="dropdown-item" href="Ferraille.php">Bon pour le Musée</a>
+            <a class="dropdown-item" href="BonMusée.php">Bon pour le Musée</a>
             
-            <a class="dropdown-item" href="Ferraille.php">Accessoire VIP</a>
+            <a class="dropdown-item" href="AccessoireVIP.php">Accessoire VIP</a>
           </div>
       </li>
 
