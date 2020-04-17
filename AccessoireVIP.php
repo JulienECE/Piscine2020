@@ -7,7 +7,7 @@
 
 <div class="container-fluid">    
   
-    	<h4>Ferraille ou trésor</h4>
+    	<h4>Accessoire VIP</h4>
     		<br>
     		<table>
 	    		<tr>

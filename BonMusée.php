@@ -7,11 +7,11 @@
 
 <div class="container-fluid">    
   
-    	<h4>Ferraille ou trésor</h4>
+    	<h4>Bon pour le musée</h4>
     		<br>
     		<table>
 	    		<tr>
-	    			<td><a href="img1"><img src="img1.jpg"></a></td>
+	    			<td><a href="cap"><img src="cap.jpg"></a></td>
 	    			<td width="300px"><p align="center">Prix : 300€ <br>(Vente par négociation)</p></td>
 	    			<td><input type="submit" name="buttonNégo" value="Négocier"></td>
 	    		</tr>
