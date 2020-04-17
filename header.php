@@ -62,12 +62,25 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.php">ACCUEIL <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">CATEGORIES</a>
-        </li>
+           
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            CATEGORIES
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="Ferraille.php">Ferraille ou Trésor</a>
+            <a class="dropdown-item" href="Ferraille.php">Bon pour le Musée</a>
+            
+            <a class="dropdown-item" href="Ferraille.php">Accessoire VIP</a>
+          </div>
+      </li>
+
+
+
         <li class="nav-item">
           <a class="nav-link" href="Vendre.php">VENDRE</a>
         </li>
+        
         
       </ul>
     </div>
