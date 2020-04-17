@@ -36,7 +36,9 @@
      <div class="row">
        <div class="col-md-4 col-sm-12 col-12"> </div>
        <div class="col-md-4 col-12 text-center">
-       <h2 class="my-md-3 site-title "> ECE Ebay </h2>
+        <a href="index.php">
+         <h2 class="my-md-3 site-title " > ECE Ebay </h2>
+        </a>
         </div>
         <div class="col-md-4 col-12 text-right">
           <p class="my-md-4 header-links">
@@ -88,3 +90,4 @@
     </nav>
      </div>
  </header>
+ <div class="wrapper"> 
