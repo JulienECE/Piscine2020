@@ -6,8 +6,7 @@
 <!-- Colonne du milieu-->
 
 <div class="container-fluid">    
-  <div class="row content">  
-    <div class="col-sm-12"> 
+  
     	<h4>Ferraille ou trésor</h4>
     		<br>
     		<table>
@@ -41,8 +40,7 @@
 	    			<td><input type="submit" name="buttonAcheter" value="Acheter"></td>
 	    		</tr>
 			</table>
-		</div>
-		</div>
+		
 		</div>
 
 
