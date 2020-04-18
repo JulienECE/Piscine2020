@@ -54,7 +54,7 @@ if ($test==false) {
 	echo $couleur;
 	echo $etat;
 	$sql = "INSERT INTO item(TITRE, DESCRIPTION, PHOTO, VIDEO, PRIX, NOM_VENDEUR, NOM_ACHETEUR, VENTE,SEXE,COULEUR,CATEGORIE,ETAT,TYPE_VENTE,TEMPS)
-	VALUES('$titre', '$description', '', '','$prix','$name','','0','$sexe','$couleur','$etat','$categorie','','')";
+	VALUES('$titre', '$description', '', '','$prix','$name','','0','$sexe','$couleur','$categorie','$etat','','')";
 	$result = mysqli_query($db_handle, $sql);
 	$sql = "SELECT * FROM item";
 	$result = mysqli_query($db_handle, $sql);

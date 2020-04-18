@@ -309,6 +309,7 @@ textarea {
  
 select {
   width: 300px;
+  display:block;
 }
  
 input[type=checkbox] {
@@ -338,15 +339,6 @@ input[type=submit] {
 .whiteColor{
 	background-color: #FFFFFF;	
 	color:black;
-}
-select{
-	width:100px;
-display:block;
-Text-shadow: none;
-}
-select{
-
-Text-shadow: none;
 }
 
 
