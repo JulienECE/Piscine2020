@@ -20,49 +20,26 @@
 
 			//tester s'il y a de résultat
 
-			$sql = "SELECT * FROM item WHERE EMAIL='$email'";
+			$sql = "SELECT * FROM item WHERE ETAT='Neuf' LIMIT 10";
 			$result = mysqli_query($db_handle, $sql);
 
-			if (mysqli_num_rows($result) == 0) {
-
-				//le livre recherché n'existe pas
-				
-				$sql = "INSERT INTO log(ADMIN, NOM, EMAIL, PHOTO)
-			 VALUES('0', '$nom', '$email', '')";
-
-			 //Verif erreur
-			 
-			// if (mysqli_query($db_handle, $sql)) {
-			//    echo "New record created successfully";
-			//} else {
-			//    echo "Error: " . $sql . "<br>" . mysqli_error($db_handle);
-			//}
-			 
-			 //-----------------//
-			 
-			 $result = mysqli_query($db_handle, $sql);
-			 
-			 $sql = "SELECT * FROM log";
-			$result = mysqli_query($db_handle, $sql);
 			while ($data = mysqli_fetch_assoc($result))
 				{
 					
 			echo "ID: " . $data['ID'] . "<br>";
-			echo "Titre: " . $data['NOM'] . "<br>";
-			echo "Auteur: " . $data['ADMIN'] . "<br>";
-			echo "Année: " . $data['EMAIL'] . "<br>";
+			echo "DESCRITION: " . $data['DESCRIPTION'] . "<br>";
+			echo "ETAT: " . $data['ETAT'] . "<br>";
 
-			}
-			}
-			}
-			
-			
+			echo '
 				<tr>
 	    			<td><a href="img1"><img src="img1.jpg"></a></td>
-	    			<td width="300px"><p align="center">Prix : 300€ <br>(Vente par négociation)</p></td>
+	    			<td width="300px"><p align="center">Prix :'.$data['ETAT'].'  <br>(Vente par négociation)</p></td>
 	    			<td><input type="submit" name="buttonNégo" value="Négocier"></td>
-	    		</tr>
-			?>
+	    		</tr>';
+			}
+			}
+				?>
+			<?php ?>
 	    		<tr>
 	    			<td><a href="img1"><img src="img1.jpg"></a></td>
 	    			<td width="300px"><p align="center"> description</p></td>
