@@ -31,6 +31,7 @@
           </div>
           
         </div> 
+
     </div>
 
     <div class="container-fluid ">
@@ -38,6 +39,7 @@
         <div class="row slider-two text-center" >
          
           <div class="col-md-2 product pt-md-5 pt-4">
+
 
 
            <a class="nomItem" href="#">
@@ -78,6 +80,7 @@
             <img src="./images/a2.jpg" alt="img6"/>
             <span class="border site-btn btn-span " > MONTRES</span>
             </a>
+
           </div>
          
         </div>

@@ -7,7 +7,6 @@
 	<br>
 		<table>
 			<center>
-			<h4>
 		<?php
 		if(isset($_SESSION['categ']) && ($_SESSION['categ']=="Chapeau" || $_SESSION['categ']=="Haut" || $_SESSION['categ']=="Bas" || $_SESSION['categ']=="Accessoire"))
 		{
@@ -40,7 +39,7 @@
 			header('Location: ./index.php');
 			exit();
 		}
-			?>	</h4>
+			?>	
 		</center>
 		</table>
 </div>
