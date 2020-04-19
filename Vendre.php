@@ -1,7 +1,7 @@
 <?php require 'header.php'; ?>
 		
 		<?php if($_SESSION['complete']==false):?>
-		<p>Veuillez remplir tous les champs"</p>
+		<p>Veuillez remplir tous les champs svp</p>
 		<?php endif;?>
 
 	<h4 align="center"> Formulaire d'ajout d'un nouvel item à vendre</h4><br>
