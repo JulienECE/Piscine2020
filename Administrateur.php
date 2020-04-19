@@ -4,24 +4,6 @@
 <div class="container-fluid p-0">
     	<h4 align="left">Administrateur</h4>
     	<p>Quelle action souhaitez vous effectuer ?</p><br>
-    	<div class="row">
-	    	<div class="col-sm-2"><input type="image" id="image" alt="Ajouter un article" src="AjouterA.jpg" height="140" width="10"></div>
-	    	<div class="col-sm-2"></div>
-	    	<div class="col-sm-8">
-	    		<form action="machin.php" method="post"> <!-- nom du php a changer -->
-	          		<table>
-		            	<tr><td align="center" width="150px">Id de l'article </td><td><input type="text" name="IdA"></td></tr>
-		            	<tr><td align="center" width="150px">Description de l'article </td><td><input type="text" name="DesA"></td></tr>
-		            	<tr><td align="center" width="150px">Nom de l'article </td><td><input type="text" name="NomA"> </td></tr>
-		            	<tr><td align="center" width="150px">Prix de l'article </td><td><input type="text" name="PrixA"></td></tr>
-		            	<tr><td align="center" width="150px">Image(s) de l'article </td><td><input type="text" name="ImgA"></td></tr>
-		            	<tr><td align="center" width="150px">Type de vente</td><td><input type="text" name="TypeVente"></td></tr>
-
-		            	<tr><td colspan="4" align="center"><input type="submit" name="buttonAjouter" value="Ajouter"></td></tr>
-		            </table>
-	      		</form> 
-	    	</div>
-	    </div>
 	    <br><br>
 	    <div class="row">
 	    	<div class="col-sm-2"><input type="image" id="image" alt="Supprimer un article" src="SupprimerA.jpg" height="140" width="90"></div>
