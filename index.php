@@ -39,13 +39,7 @@
         <div class="row slider-two text-center" >
          
           <div class="col-md-2 product pt-md-5 pt-4">
-
-
-
-           <a class="nomItem" href="#">
-            
-          
-
+            <a class="nomItem" href="description.php?78=Details">
             <img src="./images/b1.jpg" alt="img1"/>
             <span class="border site-btn btn-span" > JEANS</span>
           </a>
