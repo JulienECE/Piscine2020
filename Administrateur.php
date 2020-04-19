@@ -9,15 +9,14 @@
 	   				<legend id="legendPaiement">Ajouter Vendeur</legend>
 	      			<label id="labelPaiement"for="IdV">Id Vendeur</label><input id="IdV"><br>
 					<label id="labelPaiement"for="NomV">Nom vendeur</label><input id="NomV"><br>
-					<label id="labelPaiement"for="PrenomV">Prénom vendeur</label><input id="PrenomV"><br>
-					<label id="labelPaiement"for="PseudoV">Pseudo vendeur</label><input id="PseudoV"><br>
 					<label id="labelPaiement"for="MailV">E-mail Vendeur</label><input id="MailV"><br>
+					<label id="labelPaiement"for="PhotoV">Photo Vendeur</label><input id="PhotoV" type="file" placeholder="a"/>
 					<p align="center" id="pformulairePaiement"><input type="submit" value="Ajouter Vendeur"></p>
 			  	</fieldset>
 			</form>
 			<form action="#" method="post">
 	  			<fieldset id="fieldsetPaiement">
-	   				<legend id="legendPaiement">Supprimer Vender</legend>
+	   				<legend id="legendPaiement">Supprimer Vendeur</legend>
 	      			<label id="labelPaiement"for="IdV">Id Vendeur</label><input id="IdV"><br>
 					<p align="center" id="pformulairePaiement"><input type="submit" value="Supprimer Vendeur"></p>
 			  	</fieldset>
