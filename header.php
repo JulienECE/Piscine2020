@@ -68,10 +68,10 @@
             CATEGORIES
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="Ferraille.php">Ferraille ou Trésor</a>
-            <a class="dropdown-item" href="BonMusée.php">Bon pour le Musée</a>
-            
-            <a class="dropdown-item" href="AccessoireVIP.php">Accessoire VIP</a>
+            <a class="dropdown-item" href="temp.php">Chapeau</a>
+            <a class="dropdown-item" href="temp1.php">Haut</a>
+            <a class="dropdown-item" href="temp2.php">Bas</a>
+			<a class="dropdown-item" href="temp3.php">Accessoire</a>
           </div>
       </li>
 
