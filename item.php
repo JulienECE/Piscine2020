@@ -24,15 +24,21 @@
 		$result = mysqli_query($db_handle, $sql);
 		while ($data = mysqli_fetch_assoc($result))
 			{
+				
+
 		echo '
 			<tr>
 				<td><a href="'.$data['PHOTO'].'"><img width = "200" src="./images/'.$data['PHOTO'].'"></a></td>
 				<td width="300px" height="200px" ><p align="center">Prix :'.$data['PRIX'].'  <br>('.$data['TYPE_VENTE'].')</p></td>
-				<td><form action="detail.php" method="post" class="formulaire_val">	
-				<input type="submit" name="'.$data['PHOTO'].'" value="Details">
+				<td><form action="description.php" method="get" class="formulaire_val">	
+				<input type="submit" name="'.$data['TITRE'].'" value="Details">
+				
 				</form></td>
 			</tr>';
+
+
 		}
+
 		}
 		}
 		else

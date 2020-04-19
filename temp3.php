@@ -2,7 +2,7 @@
 	require 'util.php';
 	init_php_session();
 $_SESSION['categ']="Accessoire";
-	header('Location: ./Ferraille.php');
+	header('Location: ./item.php');
 exit();
 
 ?>
