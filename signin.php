@@ -6,13 +6,13 @@
     
 
     <!-- Colonne du milieu-->
-    <div class="col-sm-12"> 
+    <div class="col-sm-12 bite"> 
     	<br>
     	<h3>Bienvenue sur Ebay ECE !</h3>
     
 		<?php if(is_logged()):?>
 		
-			<p> Bienvenue <?=htmlspecialchars($_SESSION['username']) ?> |<a href='testlog.php?action=logout'>Se deconnecter</a></p>
+			<p> Bienvenue <?=htmlspecialchars($_SESSION['username']) ?> |<a href='testlog.php?action=logout'> Se deconnecter</a></p>
 
 		<?php else:?>
 			<br>
