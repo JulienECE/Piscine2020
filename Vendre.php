@@ -4,11 +4,12 @@
 		<p>Veuillez remplir tous les champs"</p>
 		<?php endif;?>
 
-	<form action="additem.php" method="post" class="formulaire_val">
+	<form action="additem.php" method="post" class="formulaire_val" enctype="multipart/form-data">
 	   <p><input class="inputbasic" type="text" name="titre" placeholder="Titre de l'objet"/></p>
 	   <p><textarea class="inputbasic" name="description" placeholder="Description"></textarea></p>
 	   <p><input class="inputbasic" type="file"></p>
-	   <p><input class="inputbasic" type="file"></p>
+		<p><input size="100" type="file" name="fichier" value="" /> </p>
+				
 	   <p><input type="text" name="prix" placeholder="Prix"/></p>
 	   Sexe:
 		<select id="reviewAction" name="sexe">
@@ -46,6 +47,7 @@
 		</select>
 		<br>
 	   <p><input type="submit" name="valider" /></p>
+	   <?php echo $_SESSION['message']; ?> 
 	</form>
 	
 	

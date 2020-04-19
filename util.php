@@ -5,6 +5,7 @@ function init_php_session():bool
 	{
 		session_start();
 		session_regenerate_id();
+		$_SESSION['message']='';
 		return true;
 	}
 	return false;

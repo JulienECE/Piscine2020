@@ -3,10 +3,11 @@
 	init_php_session();
 ?>
 <?php
-
+$poids_max = 5000000;
+$repertoire = './images/';
 
 //Insertion du nouvel article dans la base de données
-if(isset($_POST) && empty($_POST['titre']) || empty($_POST['description']) || empty($_POST['prix'])){
+if(isset($_POST) && empty($_POST['titre']) || empty($_POST['description']) || empty($_POST['prix']) || ($_FILES['fichier']['error'] == UPLOAD_ERR_NO_FILE) ||empty($_POST['sexe']) || empty($_POST['categorie']) || empty($_POST['couleur']) || empty($_POST['etat'])){
     echo"Veuillez remplir tous les champs";
 	$_SESSION['complete']=false;
 	header('Location: ./Vendre.php');
@@ -23,6 +24,63 @@ $sexe = isset($_POST["sexe"])? $_POST["sexe"] : "";
 $categorie = isset($_POST["categorie"])? $_POST["categorie"] : "";
 $couleur = isset($_POST["couleur"])? $_POST["couleur"] : "";
 $etat = isset($_POST["etat"])? $_POST["etat"] : "";
+
+
+
+
+ if ($_FILES['fichier']['type'] != 'image/png' && $_FILES['fichier']['type'] != 'image/jpeg' && $_FILES['fichier']['type'] != 'image/jpg' && $_FILES['fichier']['type'] != 'image/gif')
+     {
+     $erreur = 'Le fichier doit être au format *.jpeg, *.gif ou *.png .';
+     }
+    
+     // On vérifie le poids de l'image
+     elseif ($_FILES['fichier']['size'] > $poids_max)
+     {
+     $erreur = 'L\'image doit être inférieur à ' . $poids_max/1024 . 'Ko.';
+     }
+    
+     // On vérifie si le répertoire de téléchargement  existe
+     elseif (!file_exists($repertoire))
+     {
+     $erreur = 'Erreur, le dossier de téléchargement n\'existe pas.';
+     }
+    
+     // Si il y a une erreur on l'affiche sinon on peut télécharger
+     if(isset($erreur))
+     {
+     echo '' . $erreur . '<br><a href="javascript:history.back(1)">Retour</a>';
+     }
+     else
+     {
+    
+     // On définit l'extention du fichier puis on le nomme par le timestamp actuel
+     if ($_FILES['fichier']['type'] == 'image/jpeg') { $extention = '.jpeg'; }
+     if ($_FILES['fichier']['type'] == 'image/jpeg') { $extention = '.jpg'; }
+     if ($_FILES['fichier']['type'] == 'image/png') { $extention = '.png'; }
+     if ($_FILES['fichier']['type'] == 'image/gif') { $extention = '.gif'; }
+	 $oFileInfos = $_FILES["fichier"]; 
+ 
+	// nom du fichier. 
+	 $nom_fichier = $oFileInfos["name"]; 
+	 echo $nom_fichier;
+    
+     // On télécharge le fichier sur le serveur.
+     if (move_uploaded_file($_FILES['fichier']['tmp_name'], $repertoire.$nom_fichier))
+     {
+     $url = 'http://localhost:8888/machin'.$repertoire.''.$nom_fichier.'';
+     echo 'Votre image à été téléchargée sur le serveur avec succes!<br>Voici le lien: <input type="text" value="' . $url . '" size="60">';
+     }
+     else
+     {
+     echo 'L\'image n\'a pas pu être téléchargée sur le serveur.';
+     }
+    
+     }
+    
+     
+
+	
+echo 'hahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 
 //identifier votre BDD
 
@@ -84,7 +142,7 @@ mysqli_close($db_handle);
 //header('Location: ./index.php');
 
 
-// exit();
+ //exit();
 }
  else{
 	  echo"non";
