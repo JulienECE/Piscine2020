@@ -112,7 +112,7 @@ if ($test==false) {
 	echo $couleur;
 	echo $etat;
 	$sql = "INSERT INTO item(TITRE, DESCRIPTION, PHOTO, VIDEO, PRIX, NOM_VENDEUR, NOM_ACHETEUR, VENTE,SEXE,COULEUR,CATEGORIE,ETAT,TYPE_VENTE,TEMPS)
-	VALUES('$titre', '$description', '', '','$prix','$name','','0','$sexe','$couleur','$categorie','$etat','','')";
+	VALUES('$titre', '$description', '$nom_fichier', '','$prix','$name','','0','$sexe','$couleur','$categorie','$etat','','')";
 	$result = mysqli_query($db_handle, $sql);
 	$sql = "SELECT * FROM item";
 	$result = mysqli_query($db_handle, $sql);
@@ -139,13 +139,13 @@ echo "Database not found";
  
 //fermer la connexion
 mysqli_close($db_handle);
-//header('Location: ./index.php');
+header('Location: ./index.php');
 
 
- //exit();
+exit();
 }
  else{
 	  echo"non";
-	//header('Location: ./signin.php');
-  //exit();
+	header('Location: ./signin.php');
+exit();
  }
