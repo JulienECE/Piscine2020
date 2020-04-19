@@ -5,6 +5,7 @@ function init_php_session():bool
 	{
 		session_start();
 		session_regenerate_id();
+		$_SESSION['message']='';
 		return true;
 	}
 	return false;
@@ -27,4 +28,3 @@ function is_admin():bool
 			return true;
 	return false;
 }
-	
