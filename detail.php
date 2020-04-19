@@ -28,7 +28,7 @@ if(isset($_SESSION['categ']) && ($_SESSION['categ']=="Chapeau" || $_SESSION['cat
 		echo '
 			<tr>
 				<td><a href="'.$data['PHOTO'].'"><img width = "200" src="./images/'.$data['PHOTO'].'"></a></td>
-				<td width="300px" height="200px" ><p align="center">Prix :'.$data['PRIX'].'  <br>('.$data['TYPE_VENTE'].')</p></td>
+				<td width="300px" height="200px" ><p align="center">Prix : ' .$data['PRIX'].'€  <br>('.$data['TYPE_VENTE'].')</p></td>
 				<td><form action="detail.php" method="post" class="formulaire_val">	
 				<input type="submit" name="'.$data['PHOTO'].'" value="Details">
 				</form></td>
@@ -198,8 +198,3 @@ exit();
 	header('Location: ./signin.php');
 exit();
  }
- </center>
-		</table>
-</div>
-
-<?php require 'footer.php'; ?>
