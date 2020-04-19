@@ -1,5 +1,15 @@
 <?php require 'header.php'; ?>
 <!-- Colonne du milieu-->
+<?php
+		 foreach($_GET as $name => $content) { // Most people refer to $key => $value
+		  
+		}
+		    $tableau = array($name);
+     
+		$_SESSION['tableau'] = $tableau;
+		$tableau = $_SESSION['tableau'];
+
+?>
 <div class="container-fluid p-0">
     	<h3>Votre Panier<br><br></h3>
     	<div class="container-fluid">
