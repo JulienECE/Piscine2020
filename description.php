@@ -26,8 +26,6 @@
 		  
 		}
 		
-		
-		
 		$sql = "SELECT * FROM item WHERE ID = '".$name."' LIMIT 10";
 		$result = mysqli_query($db_handle, $sql);
 		while ($data = mysqli_fetch_assoc($result))
@@ -48,20 +46,11 @@
             	<br>
             	Description : ' .$data['DESCRIPTION'].'</p>
             	<br>
-				<form action="#" method="post" class="formulaire_val">	
-				<input type="submit" name="achat" value="Acheter">
+				<td><form action="panier.php" method="get" class="formulaire_val">	
+				<input type="submit" name="'.$name.'" value="Details">
 				
 				</form></td>
         	</tr>
-
-
-
-
-				
-				
-				
-				
-
 			';
 		
 		}
