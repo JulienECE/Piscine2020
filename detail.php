@@ -1,8 +1,21 @@
+<?php 
+	require 'util.php';
+	init_php_session();
+$_SESSION['categ']="Bas";
+	header('Location: ./Ferraille.php');
+exit();
+
+?>
+
 <?php
 	require 'util.php';
 	init_php_session();
 ?>
 <?php
+
+
+if (isset($_POST["valid"]))
+
 $poids_max = 5000000;
 $repertoire = './images/';
 
