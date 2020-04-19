@@ -3,9 +3,11 @@
 <!-- Colonne du milieu-->
 
 <div class="container-fluid">    
-<h4>Ferraille ou trésor</h4>
+
 	<br>
 		<table>
+			<center>
+			<h4>
 		<?php
 		if(isset($_SESSION['categ']) && ($_SESSION['categ']=="Chapeau" || $_SESSION['categ']=="Haut" || $_SESSION['categ']=="Bas" || $_SESSION['categ']=="Accessoire"))
 		{
@@ -16,7 +18,8 @@
 		if ($db_found) {
 
 		//tester s'il y a de résultat
-		echo $_SESSION['categ'];		
+		
+		echo $_SESSION['categ'];
 		$sql = "SELECT * FROM item WHERE CATEGORIE = '".$_SESSION['categ']."' LIMIT 10";
 		$result = mysqli_query($db_handle, $sql);
 		while ($data = mysqli_fetch_assoc($result))
@@ -37,7 +40,8 @@
 			header('Location: ./index.php');
 			exit();
 		}
-			?>	
+			?>	</h4>
+		</center>
 		</table>
 </div>
 
