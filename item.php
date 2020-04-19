@@ -31,7 +31,7 @@
 				<td><a href="'.$data['PHOTO'].'"><img width = "200" src="./images/'.$data['PHOTO'].'"></a></td>
 				<td width="300px" height="200px" ><p align="center">Prix : ' .$data['PRIX'].'€  <br>('.$data['TYPE_VENTE'].')</p></td>
 				<td><form action="description.php" method="get" class="formulaire_val">	
-				<input type="submit" name="'.$data['TITRE'].'" value="Details">
+				<input type="submit" name="'.$data['ID'].'" value="Details">
 				
 				</form></td>
 			</tr>';

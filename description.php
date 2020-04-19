@@ -27,22 +27,27 @@
 		}
 		
 		
-		$sql = "SELECT * FROM item WHERE TITRE = '".$name."' LIMIT 10";
+		
+		$sql = "SELECT * FROM item WHERE ID = '".$name."' LIMIT 10";
 		$result = mysqli_query($db_handle, $sql);
 		while ($data = mysqli_fetch_assoc($result))
 			{
 		echo '
-			<br>
-			<tr>
-            <td><img width = "600" src="./images/'.$data['PHOTO'].'"></td>
-            <td></td>
-            <td><h4>'.$name.' ('.$data['CATEGORIE'].'/'.$data['SEXE'].')</h4><p align="left">Prix : ' .$data['PRIX'].'  ('.$data['TYPE_VENTE'].')
+				<br>
+				<tr>
+	            <td><img width = "300" src="./images/'.$data['PHOTO'].'"></td>
+	            <td></td>
+	            <td><h4>'.$data['TITRE'].' ('.$data['CATEGORIE'].'/'.$data['SEXE'].')</h4>
+	            <br>
+	            <p align="left">Prix : ' .$data['PRIX'].' € ('.$data['TYPE_VENTE'].')
             	<br>
             	Etat : ' .$data['ETAT'].'
             	<br>
             	Vendeur : ' .$data['NOM_VENDEUR'].'
             	<br>
+            	<br>
             	Description : ' .$data['DESCRIPTION'].'</p>
+            	<br>
 				<form action="#" method="post" class="formulaire_val">	
 				<input type="submit" name="achat" value="Acheter">
 				
