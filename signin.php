@@ -20,13 +20,13 @@
 					<br>
 					<center>
 						<form action="testlog.php" method="post" class="formulaire_val">
-							<table>	
+							<fieldset>
+   								<legend id="legendPaiement">Connexion</legend><br>
+   								<label id="labelPaiement">Nom : </label><input name="nom"><br>
 								<br>
-								<tr><input type="text" placeholder="Nom" class="inputbasic firstinput" name="nom"/></tr>
-								<br>
-								<tr><input type="text" placeholder="Email" class="inputbasic" name="email"/></tr>
+								<label id="labelPaiement">E-mail : </label><input name="email"><br>
 								<tr><td><br><input type="submit" name="button" value="Se connecter"/></td></tr>
-							</table>
+							</fieldset>
 							<br><br><br>
 						</form>
 					<center/>
