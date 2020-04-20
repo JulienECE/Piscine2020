@@ -61,7 +61,6 @@ else{
 	}
 }
 }
-
 }
 echo $_SESSION['username'];
 //fermer la connexion

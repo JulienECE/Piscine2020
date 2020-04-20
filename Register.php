@@ -16,6 +16,16 @@
 			       		<tr><p>Choisir une photo de profil<p/></tr>
 			       		<tr><input type="file" class="" placeholder="a"/></tr>
 			       		<br>
+						<tr><input type="text" placeholder="Adresse" class="inputbasic" name="adresse"/></tr>
+			       		<br>
+						<tr><input type="text" placeholder="Ville" class="inputbasic" name="ville"/></tr>
+			       		<br>
+						<tr><input type="text" placeholder="Code Postal" class="inputbasic" name="cp"/></tr>
+			       		<br>
+						<tr><input type="text" placeholder="Pays" class="inputbasic" name="pays"/></tr>
+			       		<br>
+						<tr><input type="text" placeholder="Portable" class="inputbasic" name="portable"/></tr>
+			       		<br>
 			       		<br>
 			       		<input type="submit" name="button" value="Valider"/>
 		      		</table>

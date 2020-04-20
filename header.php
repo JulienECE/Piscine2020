@@ -53,8 +53,13 @@
                   <a class="dropdown-item" href="temp2.php">Bas</a>
   			          <a class="dropdown-item" href="temp3.php">Accessoire</a>
                 </div>
+				
               </li>
-              <li class="nav-item"><a class="nav-link" href="Vendre.php">VENDRE</a></li>
+			  <?php if(is_logged()):?>
+				<li class="nav-item"><a class="nav-link" href="Vendre.php">VENDRE</a></li>
+			  <?php else:?>
+			  <li class="nav-item">VENDRE (Veuillez vous connecter)</li>
+			  <?php endif;?>
             </ul>
           </div>
 
