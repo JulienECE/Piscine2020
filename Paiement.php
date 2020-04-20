@@ -21,8 +21,17 @@
 		while ($data = mysqli_fetch_assoc($result))
 		{
 			?>
-	  <form action="vendu.php" method="post" class="formulaire_val">
-	  
+			
+			<?php if($_SESSION['type']=="direct"){
+				echo'
+			<form action="vendu.php" method="post" class="formulaire_val">';
+			}
+			?>
+			<?php if($_SESSION['type']=="enchere"){
+				echo'
+			<form action="changeprix.php" method="post" class="formulaire_val">';
+			}?>
+
   			<fieldset id="fieldsetPaiement">
 			<?php
 			echo '
@@ -44,7 +53,7 @@
     				<label id="labelPaiement"><input id="americanEx"type="checkbox"> American Express<em id="emPaiement">*</em></label><br><br>
     				<label id="labelPaiement" >Numéro de carte <em id="emPaiement">*</em></label><input id="numeroCarte"><br>
 				    <label id="labelPaiement" >Nom sur la carte <em id="emPaiement">*</em></label><input id="nomCarte"><br>
-				    <label id="labelPaiement" >Epiration <em id="emPaiement">*</em></label><input id="dateExp"><br>
+				    <label id="labelPaiement" >Expiration <em id="emPaiement">*</em></label><input id="dateExp"><br>
 				    <label id="labelPaiement" >CVV <em id="emPaiement">*</em></label><input id="codeSecu"><br>
   			</fieldset>
         <p id="pformulairePaiement"><input type="submit" name="bouton" value="Finaliser le paiement"></p>

@@ -24,6 +24,13 @@
 							</table>
 							<br><br><br>
 						</form>
+						<form action="profilachat.php" method="post" class="formulaire_val">
+							<table>	
+								
+								<tr><td><br><input type="submit" name="button" value="Mes achats"/></td></tr>
+							</table>
+							<br><br><br>
+						</form>
 					<center/>
 				<?php else:?>
 					<br>

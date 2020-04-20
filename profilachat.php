@@ -18,7 +18,7 @@
 		//tester s'il y a de résultat
 		
 		
-		$sql = "SELECT * FROM item WHERE NOM_VENDEUR = '".$_SESSION['identifiant']."'";
+		$sql = "SELECT * FROM item WHERE NOM_ACHETEUR = '".$_SESSION['identifiant']."'";
 		$result = mysqli_query($db_handle, $sql);
 		while ($data = mysqli_fetch_assoc($result))
 			{
