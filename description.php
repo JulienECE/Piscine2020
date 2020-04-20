@@ -40,8 +40,7 @@
 	            <p align="left">Prix : ' .$data['PRIX'].' € ('.$data['TYPE_VENTE'].')
             	<br>
             	Etat : ' .$data['ETAT'].'
-            	<br>
-            	Vendeur : ' .$data['NOM_VENDEUR'].'
+            	
             	<br>
             	<br>
             	Description : ' .$data['DESCRIPTION'].'</p>
