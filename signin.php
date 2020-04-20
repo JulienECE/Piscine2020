@@ -7,6 +7,15 @@
 	    	<h3>Bienvenue sur Ebay ECE !</h3>
 			<?php if(is_logged()):?>
 				<p> Bienvenue <?=htmlspecialchars($_SESSION['username']) ?> |<a href='testlog.php?action=logout'> Se deconnecter</a></p>
+				<center>
+						<form action="profilVendeur.php" method="post" class="formulaire_val">
+							<table>	
+								
+								<tr><td><br><input type="submit" name="button" value="Mes items en vente"/></td></tr>
+							</table>
+							<br><br><br>
+						</form>
+					<center/>
 				<?php else:?>
 					<br>
 					<center>
