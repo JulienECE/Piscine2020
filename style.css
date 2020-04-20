@@ -86,6 +86,7 @@ header{
 
 .container-fluid{
 	width: 90%;
+  min-height: 100%;
 }
 .slick-arrow:before { 
 	color: lightblue !important; 
