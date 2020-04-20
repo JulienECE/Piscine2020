@@ -8,7 +8,7 @@
       		<br>
     		<center>
 		   		<form action="addlog.php" method="post" class="formulaire_val">
-		      		<fieldset id="fieldsetPaiement" action="addlog.php" method="post" class="formulaire_val">
+		      		<fieldset>
    						<legend id="legendPaiement">Inscription</legend>
    						<label id="labelPaiement">Nom : </label><input name="nom"><br>
    						<label id="labelPaiement">E-mail : </label><input name="email"><br>
