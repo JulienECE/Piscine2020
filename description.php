@@ -2,7 +2,7 @@
 
 <!-- Colonne du milieu-->
 
-<div class="container-fluid">    
+<div class="container">    
 
 	<br>
 	<center>
