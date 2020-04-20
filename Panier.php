@@ -8,18 +8,20 @@
 			$tableau = Array();
 			$_SESSION['tableau']=$tableau;
 		}
-		$constante = 0;
-		foreach($_SESSION['tableau'] as $element)
-		{
-			if($element==isset($name))
+		if(isset($name)){
+			$constante = 0;
+			foreach($_SESSION['tableau'] as $element)
 			{
-				$constante=1;
+				if($element==$name)
+				{
+					$constante=1;
+				}
+				echo $element . '<br />'; // affichera $prenoms[0], $prenoms[1] etc.
 			}
-			echo $element . '<br />'; // affichera $prenoms[0], $prenoms[1] etc.
-		}
-		if($constante==0)
-		{
-			array_push($_SESSION['tableau'], $name);
+			if($constante==0)
+			{
+				array_push($_SESSION['tableau'], $name);
+			}
 		}
 
 
