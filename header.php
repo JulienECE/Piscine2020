@@ -26,9 +26,15 @@
           <div class="col-md-4 col-12 text-center">
             <a href="index.php"><h2 class="my-md-3 site-title " > ECE Ebay </h2></a>
           </div>
+          <?php if(is_logged()):?>
+            <div class="col-md-4 col-12 text-right">
+            <p class="my-md-4 header-links"><a href="signin.php"class="px-2">Profil</a></p>
+          </div>
+            <?php else:?>
           <div class="col-md-4 col-12 text-right">
             <p class="my-md-4 header-links"><a href="signin.php"class="px-2">Se connecter</a><a href="Register.php" class="px-1">Nouveau compte</a></p>
           </div>
+          <?php endif;?>
       </div>
    </div>
    
