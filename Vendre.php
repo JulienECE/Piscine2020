@@ -13,7 +13,6 @@
 	   		<p align="center"><input class="inputbasic" type="text" name="prix" placeholder="Prix"/></p>
 	   		<div align="center">Sexe:
 				<select id="reviewAction" name="sexe" class="inputbasic">
-					<option value="Default">Default</option>
 					<option value="Masculin">Masculin</option>
 					<option value="Feminin">Feminin</option>
 					<option value="Unisexe">Unisexe</option>
@@ -22,7 +21,6 @@
 			<br>
 			<div align="center">Catégorie:
 				<select id="reviewAction" name="categorie" class="inputbasic">
-					<option value="Default">Default</option>
 					<option value="Chapeau">Chapeau</option>
 					<option value="Haut">Haut</option>
 					<option value="Bas">Bas</option>
@@ -32,7 +30,6 @@
 			<br>
 			<div align="center">Couleur:
 				<select id="reviewAction" name="couleur" class="inputbasic">
-					<option value="Default">Default</option>
 					<option class="greenColor" value="vert">vert</option>
 					<option class="redColor" value="rouge">rouge</option>
 					<option class="yellowColor" value="jaune">jaune</option>
@@ -43,9 +40,17 @@
 			<br>
 			<div align="center">Etat:
 				<select id="reviewAction" name="etat" class="inputbasic">
-					<option value="Default">Default</option>
 					<option value="Neuf">Neuf</option>
 					<option value="Occasion">Occasion</option>
+					
+				</select>
+			</div>
+			<br>
+			<div align="center">Type de vente:
+				<select id="reviewAction" name="type" class="inputbasic">
+					<option value="Enchere">Enchere</option>
+					<option value="A negocier">A negocier</option>
+					<option value="Achat immediat">Achat immediat</option>
 					
 				</select>
 			</div>

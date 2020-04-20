@@ -8,7 +8,7 @@
 		$nb =0;
 		$prices = Array();
 		$prices[0]=0;
-
+		$_SESSION['type']="direct";
 		if(!isset($_SESSION['tableau'])){
 			$tableau = Array();
 			
@@ -34,8 +34,6 @@
 			$nb = count($_SESSION['tableau']);//longueur du tab
 			
 		}
-		
-
 ?>
 
 <?php
@@ -50,8 +48,7 @@
 		<div class="container">
 			<center>
 			<h3>Votre Panier<br><br></h3>
-			<div class="table-responsive">
-				
+			<div class="table-responsive">		
 
 			<table width="100%">
 				<tr>
@@ -70,19 +67,12 @@
 			{
 				?>
 
-		
-					
-
-
-
 				<tr>  
                             <td><?php echo $data['TITRE']; ?></td>  
                             <td><?php echo $data['ETAT']; ?></td>  
                             <td><?php echo $data['PRIX']; ?> €</td>  
                             
                 </tr>  
-				
-			 	
 
 		<?php
 		$prices[$i] = $data['PRIX'];
@@ -94,13 +84,9 @@
 		
 		?>
 		<tr>  
-                               <td colspan="3" align="right"><h4>Total :  </h4></td>  
-                               <td align="right"><h4> <?php echo $total; ?>€ </h4></td>  
-                               
-                                
-                          </tr>  
-
-
+					   <td colspan="3" align="right"><h4>Total :  </h4></td>  
+					   <td align="right"><h4> <?php echo $total; ?>€ </h4></td>                             
+				  </tr>  
 				</tr>
 			</table>
 			
@@ -111,22 +97,11 @@
 			</center>
 		</div>
 		<?php
-
-
-
-		}
-		
+		}	
 		else
 		{
 			header('Location: ./index.php');
 			exit();
 		}
 			?>
-
-
-
-
-
-
-
 <?php require 'footer.php'; ?>
