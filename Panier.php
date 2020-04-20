@@ -11,7 +11,7 @@
 		$constante = 0;
 		foreach($_SESSION['tableau'] as $element)
 		{
-			if($element==$name)
+			if($element==isset($name))
 			{
 				$constante=1;
 			}
@@ -24,8 +24,7 @@
 
 
 ?>
-<div class="container">
-	<center>
+<div class="container-fluid p-0">
     	<h3>Votre Panier<br><br></h3>
     	<div class="container-fluid">
 	    	<div id="panier" class="row">
@@ -73,7 +72,7 @@
 				<br><br><br><br><br>
 				
 	</div>
-</center>
+
 </div>
 
 <?php require 'footer.php'; ?>

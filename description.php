@@ -47,7 +47,7 @@
             	Description : ' .$data['DESCRIPTION'].'</p>
             	<br>
 				<td><form action="panier.php" method="get" class="formulaire_val">	
-				<input type="submit" name="'.$name.'" value="Acheter">
+				<input type="submit" name="'.$name.'" value="Ajouter au panier">
 				
 				</form></td>
         	</tr>
