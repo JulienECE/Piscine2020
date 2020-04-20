@@ -36,6 +36,7 @@ if (mysqli_num_rows($result) == 0) {
 //}
  
  //-----------------//
+ header('Location: ./signin.php');
  
  $result = mysqli_query($db_handle, $sql);
  
