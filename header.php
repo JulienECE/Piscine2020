@@ -58,7 +58,7 @@
 			  <?php if(is_logged()):?>
 				<li class="nav-item"><a class="nav-link" href="Vendre.php">VENDRE</a></li>
 			  <?php else:?>
-			  <li class="nav-item">VENDRE (Veuillez vous connecter)</li>
+			  <li class="nav-item"><a class="nav-link" href="#">VENDRE (Connexion requise)</a></li>
 			  <?php endif;?>
             </ul>
           </div>

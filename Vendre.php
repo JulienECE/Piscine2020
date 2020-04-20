@@ -14,8 +14,8 @@
 	   		<div align="center">Sexe:
 				<select id="reviewAction" name="sexe" class="inputbasic">
 					<option value="Default">Default</option>
-					<option value="Homme">Homme</option>
-					<option value="Femme">Femme</option>
+					<option value="Masculin">Masculin</option>
+					<option value="Feminin">Feminin</option>
 					<option value="Unisexe">Unisexe</option>
 				</select>
 			</div>
@@ -45,8 +45,8 @@
 				<select id="reviewAction" name="etat" class="inputbasic">
 					<option value="Default">Default</option>
 					<option value="Neuf">Neuf</option>
-					<option value="Bon état">Bon état</option>
-					<option value="Usé">Usé</option>
+					<option value="Occasion">Occasion</option>
+					
 				</select>
 			</div>
 			<br>
