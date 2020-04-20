@@ -22,6 +22,7 @@
 			header('Location: ./index.php');
 			exit();
 		}
+		unset($_SESSION['tableau']);
 		header('Location: ./index.php');
 			exit();
 ?>
