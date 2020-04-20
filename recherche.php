@@ -1,16 +1,16 @@
+
 <?php require 'header.php'; ?>
 
 <!-- Colonne du milieu-->
 
-<div class="container-fluid">    
+<div class="container">    
 
 	<br>
 		<table>
 			<center>
 			<h4>
 		<?php
-		if(isset($_SESSION['categ']) && ($_SESSION['categ']=="Chapeau" || $_SESSION['categ']=="Haut" || $_SESSION['categ']=="Bas" || $_SESSION['categ']=="Accessoire"))
-		{
+		
 		$database = "bdd";
 		$db_handle = mysqli_connect('localhost', 'root', '');
 		$db_found = mysqli_select_db($db_handle, $database);
@@ -18,9 +18,14 @@
 		if ($db_found) {
 
 		//tester s'il y a de résultat
-
-		echo $_SESSION['categ'];
-		$sql = "SELECT * FROM item WHERE CATEGORIE = '".$_SESSION['categ']."' LIMIT 10";
+		
+		
+		foreach($_GET as $name => $content) { // Most people refer to $key => $value
+		  
+		}
+		echo 'Résultats pour "'.$content.'"';
+		
+		$sql = "SELECT * FROM item WHERE COULEUR = '".$content."' OR SEXE = '".$content."' OR ETAT = '".$content."' OR CATEGORIE = '".$content."' OR TYPE_VENTE = '".$content."' LIMIT 10";
 		$result = mysqli_query($db_handle, $sql);
 		while ($data = mysqli_fetch_assoc($result))
 			{
@@ -40,7 +45,7 @@
 		}
 
 		}
-		}
+		
 		else
 		{
 			header('Location: ./index.php');
