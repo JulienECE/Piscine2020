@@ -22,7 +22,7 @@
 		  
 		}
 		
-		$sql = "SELECT COUNT(*) FROM item WHERE CATEGORIE='Haut'";
+		$sql = "SELECT COUNT(*) FROM item WHERE CATEGORIE='".$_SESSION['categ']."'";
 		$result = mysqli_query($db_handle, $sql);
 		$number=0;
 		while ($data = mysqli_fetch_assoc($result))
