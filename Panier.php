@@ -46,6 +46,7 @@
 			<h3>Votre Panier<br><br></h3>
 			<div class="table-responsive">
 				
+
 			<table width="100%">
 				<tr>
 					<th width="70%"> Article</th>
@@ -98,8 +99,8 @@
 			</table>
 			
 		</div>
-				<form action="paiement.php" method="get" class="formulaire_val">	
-				<input type="submit" name="'.$_SESSION['tableau'].'" value="Passer la commande" >
+				<form action="paiement.php" method="post" class="formulaire_val">	
+				<input type="submit" name="bouton" value="Passer la commande" >
 				</form>
 			</center>
 		</div>
@@ -115,6 +116,7 @@
 			exit();
 		}
 			?>
+
 
 
 
