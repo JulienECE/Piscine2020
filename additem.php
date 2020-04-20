@@ -135,7 +135,7 @@ if(isset($_POST) && empty($_POST['titre']) || empty($_POST['description']) || em
 	//fermer la connexion
 	echo "dans la jungle";
 	mysqli_close($db_handle);
-	header('Location: ./index.php');
+	header('Location: ./profilVendeur.php');
 exit();
 }
  else{
