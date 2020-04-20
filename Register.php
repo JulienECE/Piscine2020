@@ -8,29 +8,21 @@
       		<br>
     		<center>
 		   		<form action="addlog.php" method="post" class="formulaire_val">
-		      		<table><br>
-		          		<tr><input type="text" placeholder="Nom" class="inputbasic firstinput" name="nom"/></tr>
-		          		<br>
-			       		<tr><input type="text" placeholder="Email" class="inputbasic" name="email"/></tr>
-			       		<br>
-			       		<tr><p>Choisir une photo de profil<p/></tr>
-			       		<tr><input type="file" class="" placeholder="a"/></tr>
-			       		<br>
-						<tr><input type="text" placeholder="Adresse" class="inputbasic" name="adresse"/></tr>
-			       		<br>
-						<tr><input type="text" placeholder="Ville" class="inputbasic" name="ville"/></tr>
-			       		<br>
-						<tr><input type="text" placeholder="Code Postal" class="inputbasic" name="cp"/></tr>
-			       		<br>
-						<tr><input type="text" placeholder="Pays" class="inputbasic" name="pays"/></tr>
-			       		<br>
-						<tr><input type="text" placeholder="Portable" class="inputbasic" name="portable"/></tr>
+		      		<fieldset id="fieldsetPaiement" action="addlog.php" method="post" class="formulaire_val">
+   						<legend id="legendPaiement">Inscription</legend>
+   						<label id="labelPaiement">Nom : </label><input name="nom"><br>
+   						<label id="labelPaiement">E-mail : </label><input name="email"><br>
+   						<label id="labelPaiement">Photo de profil : </label><input type="file" name="PhotoP"><br>
+			       		<label id="labelPaiement">Adresse : </label><input name="adresse"><br>
+			       		<label id="labelPaiement">Ville : </label><input name="Ville"><br>
+			       		<label id="labelPaiement">Code Postal : </label><input name="cp"><br>
+			       		<label id="labelPaiement">Pays : </label><input name="pays"><br>
+						<label id="labelPaiement">Tél : </label><input name="portable"><br>
 			       		<br>
 			       		<br>
 			       		<input type="submit" name="button" value="Valider"/>
-		      		</table>
+		      		</fieldset>
 		    	</form>
-		    	<br><br><br><br>
 		  	</center>
    		</div>     
 	</div>
