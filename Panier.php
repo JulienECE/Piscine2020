@@ -66,8 +66,11 @@
 					</tr>
 			</div>
 			<br>
-				<tr><td><input type="submit" name="button" value="Passer la commande" align="right"></td></tr>
+				<tr><td><form action="paiement.php" method="get" class="formulaire_val">	
+				<input type="submit" name="'.$_SESSION['tableau'].'" value="Passer la commande" align="right">
+				</form></td></td></tr>
 				<br><br><br><br><br>
+				
 	</div>
 
 </div>
