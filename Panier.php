@@ -4,10 +4,24 @@
 		 foreach($_GET as $name => $content) { // Most people refer to $key => $value
 		  
 		}
-		    $tableau = array($name);
-     
-		$_SESSION['tableau'] = $tableau;
-		$tableau = $_SESSION['tableau'];
+		if(!isset($_SESSION['tableau'])){
+			$tableau = Array();
+			$_SESSION['tableau']=$tableau;
+		}
+		$constante = 0;
+		foreach($_SESSION['tableau'] as $element)
+		{
+			if($element==$name)
+			{
+				$constante=1;
+			}
+			echo $element . '<br />'; // affichera $prenoms[0], $prenoms[1] etc.
+		}
+		if($constante==0)
+		{
+			array_push($_SESSION['tableau'], $name);
+		}
+
 
 ?>
 <div class="container-fluid p-0">
