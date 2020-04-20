@@ -86,6 +86,9 @@ header{
 
 .container-fluid{
 	width: 90%;
+  
+}
+.container{
   min-height: 100%;
 }
 .slick-arrow:before { 

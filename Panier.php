@@ -10,7 +10,8 @@
 		$tableau = $_SESSION['tableau'];
 
 ?>
-<div class="container-fluid p-0">
+<div class="container">
+	<center>
     	<h3>Votre Panier<br><br></h3>
     	<div class="container-fluid">
 	    	<div id="panier" class="row">
@@ -55,7 +56,7 @@
 				<tr><td><input type="submit" name="button" value="Passer la commande" align="right"></td></tr>
 				<br><br><br><br><br>
 	</div>
-
+</center>
 </div>
 
 <?php require 'footer.php'; ?>

@@ -1,6 +1,6 @@
 <?php require 'header.php'; ?>
 
-<div class="container-fluid text-center">    
+<div class="container text-center">    
 	<div class="row content">
 		<div class="col-sm-12"> 
     		<br>
