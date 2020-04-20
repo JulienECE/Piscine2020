@@ -4,10 +4,24 @@
 		 foreach($_GET as $name => $content) { // Most people refer to $key => $value
 		  
 		}
-		    $tableau = array($name);
-     
-		$_SESSION['tableau'] = $tableau;
-		$tableau = $_SESSION['tableau'];
+		if(!isset($_SESSION['tableau'])){
+			$tableau = Array();
+			$_SESSION['tableau']=$tableau;
+		}
+		$constante = 0;
+		foreach($_SESSION['tableau'] as $element)
+		{
+			if($element==$name)
+			{
+				$constante=1;
+			}
+			echo $element . '<br />'; // affichera $prenoms[0], $prenoms[1] etc.
+		}
+		if($constante==0)
+		{
+			array_push($_SESSION['tableau'], $name);
+		}
+
 
 ?>
 <div class="container">
@@ -53,8 +67,11 @@
 					</tr>
 			</div>
 			<br>
-				<tr><td><input type="submit" name="button" value="Passer la commande" align="right"></td></tr>
+				<tr><td><form action="paiement.php" method="get" class="formulaire_val">	
+				<input type="submit" name="'.$_SESSION['tableau'].'" value="Passer la commande" align="right">
+				</form></td></td></tr>
 				<br><br><br><br><br>
+				
 	</div>
 </center>
 </div>
