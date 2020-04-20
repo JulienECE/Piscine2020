@@ -17,7 +17,6 @@
 				echo $sql ;
 			}
 		}
-		
 		else
 		{
 			header('Location: ./index.php');

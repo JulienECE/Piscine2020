@@ -16,12 +16,42 @@
 		$db_found = mysqli_select_db($db_handle, $database);
 		
 		if ($db_found) {
-
-		//tester s'il y a de résultat
-
-		echo $_SESSION['categ'];
-		$sql = "SELECT * FROM item WHERE CATEGORIE = '".$_SESSION['categ']."' LIMIT 10";
+			
+		foreach($_GET as $id => $content) 
+		{ // Most people refer to $key => $value
+		  
+		}
+		
+		$sql = "SELECT COUNT(*) FROM item WHERE CATEGORIE='Haut'";
 		$result = mysqli_query($db_handle, $sql);
+		$number=0;
+		while ($data = mysqli_fetch_assoc($result))
+			{
+				foreach($data as $element)
+			{
+				$number=$element;
+			}
+			}
+
+		$page=0;
+		if(!isset($id))
+		{
+			$next=1;
+			$previous=1;
+			$sql = "SELECT * FROM item WHERE CATEGORIE = '".$_SESSION['categ']."' AND VENTE=0 LIMIT 10";
+		$result = mysqli_query($db_handle, $sql);
+		}
+		//tester s'il y a de résultat
+		if(isset($id))
+		{
+			$id=(int)$id;
+			(int)$next=$id+1;
+			(int)$previous=$id-1;
+			$page=(10*($id));
+			$sql = "SELECT * FROM item WHERE CATEGORIE = '".$_SESSION['categ']."'  LIMIT ".$page.",10";
+		$result = mysqli_query($db_handle, $sql);
+		}
+		
 		while ($data = mysqli_fetch_assoc($result))
 			{
 				
@@ -29,15 +59,31 @@
 		echo '
 			<tr>
 				<td><a href="'.$data['PHOTO'].'"><img width = "200" src="./images/'.$data['PHOTO'].'"></a></td>
-				<td width="300px" height="200px" ><h4 align="center"> '.$data['TITRE'].' ('.$data['CATEGORIE'].'/'.$data['SEXE'].')</h4>
-				<p align="center">Prix : ' .$data['PRIX'].'€  <br>('.$data['TYPE_VENTE'].')</p></td>
+				<td width="300px" height="200px" ><p align="center">Prix : ' .$data['ID'].'€  <br>('.$data['TYPE_VENTE'].')</p></td>
 				<td><form action="description.php" method="get" class="formulaire_val">	
 				<input type="submit" name="'.$data['ID'].'" value="Details">
-				
 				</form></td>
 			</tr>';
 
 
+		}
+			if(isset($id) && $id>0)
+		{
+				echo '
+			<tr>
+				<form action="item.php" method="get" class="formulaire_val">	
+				<input type="submit" name="'.$previous.'" value="previous">		
+				</form>
+			</tr>';
+		}
+		if($page+11<=(int)$number)
+		{
+				echo '
+			<tr>
+				<form action="item.php" method="get" class="formulaire_val">	
+				<input type="submit" name="'.$next.'" value="next">		
+				</form>
+			</tr>';
 		}
 
 		}
