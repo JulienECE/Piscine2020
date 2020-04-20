@@ -1,6 +1,7 @@
 <?php require 'header.php'; ?>
 <!-- Colonne du milieu-->
 <?php
+		$name=50;
 		 foreach($_GET as $name => $content) { // Most people refer to $key => $value
 		  
 		}
