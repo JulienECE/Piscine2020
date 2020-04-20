@@ -4,11 +4,15 @@
 		 foreach($_GET as $name => $content) { // Most people refer to $key => $value
 		  
 		}
+		$nb =0;
+		$prices = Array();
+		$prices[0]=0;
 
 		if(!isset($_SESSION['tableau'])){
 			$tableau = Array();
-			$prices = Array();
+			
 			$_SESSION['tableau']=$tableau;
+
 		}
 
 		if(isset($name)){
@@ -25,6 +29,7 @@
 			{
 				array_push($_SESSION['tableau'], $name);
 			}
+
 			$nb = count($_SESSION['tableau']);//longueur du tab
 			
 		}
