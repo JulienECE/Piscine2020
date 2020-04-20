@@ -32,7 +32,7 @@
 				    <label id="labelPaiement">Ville</label><input id="ville" value="' .$data['VILLE'].'"><br>
 				    <label id="labelPaiement">Code Postal</label><input id="codePostal" value="' .$data['CODE_POSTAL'].'"><br>
 				    <label id="labelPaiement">Pays</label><input id="pays" value="' .$data['PAYS'].'"><br>
-				    <label id="labelPaiement">Portable</label><input id="telephone" type="tel"placeholder="06xxxxxxxx" pattern="06[0-9]{8}" value="' .$data['PORTABLE'].'"><br>
+				    <label id="labelPaiement">Portable</label><input id="telephone" type="tel"placeholder="06xxxxxxxx" value="' .$data['PORTABLE'].'"><br>
 		  	';
 			?>
 			</fieldset>
