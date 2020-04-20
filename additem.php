@@ -75,10 +75,6 @@ $etat = isset($_POST["etat"])? $_POST["etat"] : "";
      }
     
      }
-    
-     
-
-	
 echo 'hahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
 
 //identifier votre BDD
@@ -96,16 +92,22 @@ if ($db_found) {
 $sql = "SELECT * FROM item WHERE TITRE='$titre'";
 $result = mysqli_query($db_handle, $sql);
 $test=false;
-while ($data = mysqli_fetch_assoc($result))
-{
-	echo $data['DESCRIPTION'];
-	if($data['DESCRIPTION']==$description)
+if(!empty($result)){
+	while ($data = mysqli_fetch_assoc($result))
 	{
-		$test=true;
+		echo $data['DESCRIPTION'];
+		if($data['DESCRIPTION']==$description)
+		{
+			$test=true;
+		}
 	}
 }
+else{
+	$test=true;
+}
 if ($test==false) {
-	$name=$_SESSION['username'];
+	echo "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+	$name=$_SESSION['identifiant'];
 	echo $sexe;
 	echo $categorie;
 	echo $couleur;

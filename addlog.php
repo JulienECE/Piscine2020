@@ -52,7 +52,7 @@ echo "Année: " . $data['EMAIL'] . "<br>";
 }
     echo"Veuillez remplir tous les champs";
 	$_SESSION['complete']=false;
-	header('Location: ./Register.php');
+	header('Location: ./signin.php');
 	exit();
 }
  else {

@@ -18,7 +18,7 @@
 		//tester s'il y a de résultat
 		
 		
-		$sql = "SELECT * FROM item WHERE NOM_VENDEUR = '".$_SESSION['username']."' LIMIT 10";
+		$sql = "SELECT * FROM item WHERE NOM_VENDEUR = '".$_SESSION['identifiant']."' LIMIT 10";
 		$result = mysqli_query($db_handle, $sql);
 		while ($data = mysqli_fetch_assoc($result))
 			{

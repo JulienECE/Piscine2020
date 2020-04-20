@@ -67,12 +67,14 @@
             <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search" name="recherche">
             <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Rechercher</button>
           </form>
-
-          <div class="basket">
+		  <?php //if(is_logged()):?>
+		 <div class="basket">
             <a class="panier" href="Panier.php">
             <li class="nav-item border rounded-circle mx-2 basket-icon"><i class="fas fa-shopping-basket p-2"></i></li>
             </a>
           </div>
+		  <?php //endif;?>
+
         </nav>
      </div>
   </header>
